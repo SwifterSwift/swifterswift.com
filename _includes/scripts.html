@@ -1,0 +1,27 @@
+<script>
+	var last = 0;
+	function refresh() {
+		var xhr = new XMLHttpRequest();
+		xhr.onloadend = function(e) {
+			if(this.status != 200)
+				return;
+			clenstr = this.getResponseHeader("content-length");
+			clen = parseInt(clenstr);
+			if(last == 0)
+				last = clen;
+			else if(clen != last)
+				window.location.reload();
+			return;
+		}
+		xhr.open("HEAD",window.location,true);
+		xhr.send(null);
+		return;
+	}
+	window.onload = function() {
+		if(window.location.hostname == "localhost") {
+			refresh();
+			setInterval(refresh,1000);
+		}
+		return;
+	};
+</script>
