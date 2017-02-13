@@ -245,7 +245,7 @@ select option {
   height: 496px;
 }
 .featurette {
-  padding: 60px 0 0;
+  margin-top: -30px;
 }
 .featurette-image {
   margin-top: -115px;
@@ -536,7 +536,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu {
   margin: -25px auto 0;
 }
 .featurette {
-  padding: 60px 0 10px;
+  margin-top: -60px;
 }
 #footer-social {
   text-align: center;
