@@ -36,12 +36,10 @@ ul, li {
 	color: #777;
 }
 a {
-	color: #658cc3;
-	text-decoration: none;
+	color: OrangeRed;
 }
 a:hover, a:focus, .selected {
-	color: #87afe8;
-	text-decoration: none;
+	color: OrangeRed;
 }
 a img{
 	border: none 0px #FFF;
@@ -75,7 +73,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 	margin: 10px;
 }
 .text-note {
-  color: #aaa !important;
+  color: #999 !important;
 }
 .text-note-small {
   color: #aaa !important;
@@ -176,6 +174,14 @@ select option {
 .circle{
   border-radius: 50%;
   position:absolute;  
+}
+
+.swifter-link {
+  color: OrangeRed;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 @keyframes flicker{
