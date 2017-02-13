@@ -198,7 +198,7 @@ select option {
 }
 @keyframes animatedBackground {
   from { background-position: 0 0; }
-  to { background-position: 300px 300px; }
+  to { background-position: -300px 300px; }
 }
 @-webkit-keyframes animatedBackground {
   from { background-position: 0 0; }
