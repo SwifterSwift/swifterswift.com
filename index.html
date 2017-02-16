@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SwifterSwift</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta content="SwifterSwift a Swift 3 library of a native collection of extensions and performance improvements for iOS, macOS, tvOS, watchOS." name="description" />
+<meta content="SwifterSwift is a collection of over 500 native Swift 3 extensions, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes – over 500 in 1 – for iOS, macOS, tvOS and watchOS." name="keyword" />
+<meta name="author" content="Lionbytes">
+
+<link type="text/css" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css" rel="stylesheet">
+<link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+
+<link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
+
+<!-- Owl Carousel Assets -->
+<link href="owl-carousel/owl.carousel.css" rel="stylesheet">
+<link href="owl-carousel/owl.theme.css" rel="stylesheet">
+
+<!-- Custom Styles -->
+<link type="text/css" href="css/styles.css" rel="stylesheet">
+<link type="text/css" href="css/prism.css" rel="stylesheet">
+
+</head>
+<body id="page-top" data-spy="scroll" data-target="#navbar" data-offset="60">
+<a href="https://github.com/SwifterSwift" class="github-corner" target="_blank" aria-label="View SwifterSwift on Github" title="View SwifterSwift on Github">
+<svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<div id="main">
+
+  <!-- START: Header -->
+  <div class="nav-wrap nav-flatusual" id="header">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top transit-all">
+      <div class="container">
+        <header class="navbar-header">
+          <!-- LOGO -->
+          <h1 id="branding"><a class="navbar-brand" href="https://github.com/SwifterSwift" title="SwifterSwift on GitHub" target="_blank">
+          <img src="images/logo-block-notext.png" alt="SwifterSwift" class="branding-default" />
+          <img src="images/logo-white.png" alt="SwifterSwift" class="branding-inverse hidden" /></a></h1>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="glyphicon glyphicon-menu-hamburger"></span></button>
+        </header>
+        
+        <!-- Main Nav Menu -->
+        <div id="navbar" class="navbar-collapse collapse">
+          <!-- Nav Menu -->
+          <ul class="nav navbar-nav">
+            <li><a href="#page-top" class="page-scroll">Home</a></li>
+            <li><a href="#downloads" class="page-scroll">Download</a></li>
+            <li><a href="#docs" class="page-scroll">Documentation</a></li>
+            <li><a href="#get-involved" class="page-scroll">Get Involved</a></li>
+            <li><a href="#support" class="page-scroll">Support It</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- END: Header -->
+
+  <div class="container-wrap bg" id="animate-area">
+    <section class="container">
+    	<div class="row featurette text-center">
+          <img src="images/logo-noflame.png" style="width: 200px; margin-top: 40px; z-index: 1000; position: relative;">
+          <div class="container-anm">
+            <div class="red flame"></div>
+            <div class="orange flame"></div>
+            <div class="yellow flame"></div>
+            <div class="white flame"></div>
+          </div>
+          <img src="images/logo-text.png" style="width: 230px; margin: -20px 0px 30px;">
+          <p class="text-note" style="text-transform: uppercase; letter-spacing: 3px; font-size: 8pt; margin-top: -25px;">Reach Your Goals Swifter!</p>
+        </div>
+    </section>
+  </div>
+
+  <div class="container-wrap badge-wrapper">
+    <section class="container">
+    	<div class="row">
+        	<div class="col-xs-12">
+                <div class="badge-list"> 
+                    <a href="https://travis-ci.org/SwifterSwift/SwifterSwift" target="_blank"><img src="https://api.travis-ci.org/SwifterSwift/SwifterSwift.svg?branch=master" alt="Build Status" /></a>
+                    <a href="https://cocoapods.org/pods/SwifterSwift" target="_blank"><img src="https://img.shields.io/cocoapods/v/SwifterSwift.svg" alt="Cocoapods" /></a>
+                    <a href="https://github.com/Carthage/Carthage" target="_blank"><img src="https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat" alt="Carthage compatible" /></a>
+                    <a href="https://codecov.io/gh/SwifterSwift/SwifterSwift" target="_blank"><img src="https://codecov.io/gh/SwifterSwift/SwifterSwift/branch/master/graph/badge.svg" alt="codecov" /></a>
+                    <a href="https://cocoapods.org/pods/SwifterSwift" target="_blank"><img src="https://img.shields.io/cocoapods/dm/SwifterSwift.svg" alt="CocoaPods downloads" /></a>
+                    <a href="https://github.com/SwifterSwift/swifterSwift" target="_blank"><img src="https://img.shields.io/cocoapods/p/SwifterSwift.svg?style=flat" alt="Platforms" /></a>
+                    <a href="https://swift.org" target="_blank"><img src="https://img.shields.io/badge/Swift-3.0-orange.svg" alt="Swift" /></a>
+                    <a href="https://developer.apple.com/xcode" target="_blank"><img src="https://img.shields.io/badge/Xcode-8.0-blue.svg" alt="Xcode" /></a>
+                    <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-red.svg" alt="MIT License" /></a>
+                    <a href="https://gitter.im/swifterswift/Lobby?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge" target="_blank"><img src="https://camo.githubusercontent.com/2d7de31a9d3f28595b30cff0519606aee4f7dcb0/68747470733a2f2f6261646765732e6769747465722e696d2f7377696674657273776966742f4c6f6262792e737667" alt="Join the chat at https://gitter.im/swifterswift/Lobby"></a>
+                </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- START: What -->
+  <div class="container-wrap">
+    <section class="container">
+      <br>
+    	<h1>What is <em class="text-danger"><strong>Swifter</strong>Swift</em> ?</h1>
+        <p><em><strong>Swifter</strong>Swift</em> is a collection of over 500 native Swift 3 extensions, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes –over 500 in 1– for iOS, macOS, tvOS and watchOS.</p>
+      <br>
+      <br>
+    </section>
+  </div>
+  <!-- END: What -->
+  
+  <!-- START: Download -->
+  <div class="container-wrap" id="downloads">
+    <section class="container">
+    <br><br><h1>Download <span class="fa fa-download text-danger"></span></h1>
+  <div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#CocoaPods" aria-controls="CocoaPods" role="tab" data-toggle="tab">CocoaPods</a></li>
+    <li role="presentation"><a href="#Carthage" aria-controls="Carthage" role="tab" data-toggle="tab">Carthage</a></li>
+    <li role="presentation"><a href="#PackageManager" aria-controls="PackageManager" role="tab" data-toggle="tab">Swift Package Manager</a></li>
+    <li role="presentation"><a href="#SourceFiles" aria-controls="SourceFiles" role="tab" data-toggle="tab">Source Files</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane fade in active" id="CocoaPods">
+      	<h3>Add using CocoaPods</h3>
+        <p>Check <a href="https://cocoapods.org/pods/SwifterSwift">SwifterSwift on CocoaPods</a><br>
+        CocoaPods is a dependency manager for Cocoa projects. You can install it with the following command:</p>
+        <pre class="language-bash"><code>$ gem install cocoapods</code></pre>
+        To integrate SwifterSwift into your Xcode project using CocoaPods, specify it in your Podfile:
+<pre class="language-ruby"><code>source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+target '&lt;Your Target Name&gt;' do
+   pod 'SwifterSwift'
+end</code></pre>
+        <p>Then, run the following command:</p>
+        <pre class="language-bash"><code>$ pod install</code></pre>
+      </div>
+
+      <div role="tabpanel" class="tab-pane fade" id="Carthage">
+     	<h3>Add using Carthage</h3>
+        <p>Carthage is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks. <br>
+        You can install Carthage with Homebrew using the following command:</p>
+<pre class="language-bash"><code>$ brew update
+$ brew install carthage</code></pre>
+        
+        <p>To integrate SwifterSwift into your Xcode project using Carthage, specify it in your Cartfile:</p>
+        <pre class="language-bash"><code>github "SwifterSwift/SwifterSwift" ~> 1.5</code></pre>
+        
+        <p>Run</p>
+        <pre class="language-bash"><code>carthage update</code></pre>
+        <p>to build the framework and drag the built `SwifterSwift.framework` into your Xcode project.</p>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="PackageManager">
+      <h3>Add using Swift Package Manager</h3>
+      <p>You can use the Swift Package Manager to install SwifterSwift by adding the proper description to your Package.swift file:</p>
+<pre class="language-swift"><code>import PackageDescription
+
+let package = Package(
+    name: "YOUR_PROJECT_NAME",
+    targets: [],
+    dependencies: [
+         .Package(url: "https://github.com/SwifterSwift/SwifterSwift.git", 
+         versions: Version(1,4,0)..&lt;Version(2, .max, .max)),
+    ]
+)</code></pre>
+
+      </div>
+      <div role="tabpanel" class="tab-pane fade text-center" id="SourceFiles">
+      	<br><br>
+        <p class="text-note-small">Download the source file.</p>
+      	<a href="https://github.com/SwifterSwift/SwifterSwift/archive/master.zip" class="btn btn-lg btn-danger"><strong>Swifter</strong> Swift Source</a><br><br><br>
+      </div>
+    </div>
+    
+    </div>    
+</section>
+</div>
+<!-- END: Download -->
+
+<!-- START: Documentation -->
+  <div class="container-wrap animate-ascend" id="docs">
+    <section class="container">
+    	<br><br><br>
+    	<p class="text-center">Read the Documentation<br>
+        	<a href="https://github.com/SwifterSwift/SwifterSwiftDocs" class="transit" target="_blank"><span class="glyphicon glyphicon-book"></span></a>
+        </p>
+        <br>
+	</section>
+  </div>
+<!-- END: Documentation -->
+
+<!-- START: Get Involved -->
+<div id="get-involved" class="container-wrap-dark">
+ <section class="container marketing">
+  <header class="row">
+  	<h1 class="col-xs-12 text-center">Get Involved <span class="fa fa-keyboard-o text-danger"></span></h1>
+  </header>
+    <!-- Circle Windows -->
+    <div class="row">
+      <div class="col-sm-4"> <img alt="Generic placeholder image" src="images/icon-github.png" class="img-circle">
+        <h2>Fork the Project</h2>
+        
+		<span style="display: block; margin-top: -10px;"><a class="github-button" href="https://github.com/SwifterSwift/SwifterSwift/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/SwifterSwift/SwifterSwift/network" data-count-api="/repos/SwifterSwift/SwifterSwift#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork SwifterSwift/SwifterSwift on GitHub">Fork</a></span>
+        <p><a role="button" href="https://github.com/SwifterSwift/SwifterSwift/network/members" class="btn btn-danger" target="_blank">View details »</a></p>
+      </div>
+      <!-- /.col-lg-4 -->
+      <div class="col-sm-4"> <img alt="Generic placeholder image" src="images/icon-ext.png" class="img-circle">
+        <h2>Contributing guidelines for extensions</h2>
+        
+        <p><a role="button" href="https://github.com/SwifterSwift/SwifterSwift/blob/master/CONTRIBUTING.md" class="btn btn-primary" target="_blank">View details »</a></p>
+      </div>
+      <!-- /.col-lg-4 -->
+      <div class="col-sm-4"> <img alt="Generic placeholder image" src="images/icon-doc.png" class="img-circle">
+        <h2>Contributing guidelines for documentations</h2>
+        
+        <p><a role="button" href="https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/CONTRIBUTING.md" class="btn btn-danger" target="_blank">View details »</a></p>
+      </div>
+      <!-- /.col-lg-4 -->
+    </div>
+    <!-- /.row -->
+
+ </section>
+</div>
+<!-- END: Get Involved -->
+
+<!-- START: Support -->
+<div class="container-wrap digests" id="support">
+  <div class="container">
+      <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+      <h1>Support <em class="text-danger"><strong>Swifter</strong>Swift</em></h1>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+        <h4>Star the project</h4>
+		<a class="github-button" href="https://github.com/SwifterSwift/SwifterSwift" data-icon="octicon-star" data-style="mega" data-count-href="/SwifterSwift/SwifterSwift/stargazers" data-count-api="/repos/SwifterSwift/SwifterSwift#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star SwifterSwift/SwifterSwift on GitHub">Star</a>
+      </div>
+      <!--/.col-xs-6.col-md-4-->
+      <div class="col-xs-12 col-sm-6 col-md-4 text-center">
+        <h4>Watch the project</h4>
+        <a class="github-button" href="https://github.com/SwifterSwift/SwifterSwift/subscription" data-icon="octicon-eye" data-style="mega" data-count-href="/SwifterSwift/SwifterSwift/watchers" data-count-api="/repos/SwifterSwift/SwifterSwift#subscribers_count" data-count-aria-label="# watchers on GitHub" aria-label="Watch SwifterSwift/SwifterSwift on GitHub">Watch</a>
+      </div>
+      <!--/.col-xs-6.col-md-4-->
+    </div>
+    <!--/row-->
+  </div>
+</div>
+<!-- END: Support -->
+
+<!-- START: Store -->
+<div id="store" class="container-wrap">
+	<section id="windows" class="container">
+    	<h2>Store <span class="fa fa-shopping-cart text-danger"></span></h2>
+        <p>Also, you can support the project by purchasing <em class="text-danger"><strong>Swifter</strong>Swift</em> merch. Elegantly designed Regular Tees, American Apparel Tees, Sweatshirts, Classic Long Sleeve Tees, Unisex Tank Tops, Hoodies, Mugs, Posters, Mobile Cases, etc. Regular fit and relaxed fit for both gentlemen and ladies.</p>
+        <p><strong>Note: </strong>each print has its own mug, mobile case and poster designs.<br>&nbsp;</p>
+        <div class="row">
+         
+          <div class="col-sm-4">
+            <div class="thumbnail"> <img src="images/tee-swifter-colored-art-front-back.jpg" alt="Tee Thumb">
+              <div class="caption">
+                <h2 id="thumbnail-label3"><a href="https://teechip.com/swifter-colored-art-front-back#id=4&c=F6F6F6&sid=gildan-50-50-hoodie&s=front" target="_blank">SwifterSwift - Colored Art / Front-Back</a></h2>
+                <div class="price"><span>$23.00</span> - <span>$32.00</span></div>
+                <footer class="window-buttons">
+                	<a href="https://teechip.com/swifter-colored-art-front-back#id=4&c=F6F6F6&sid=gildan-50-50-hoodie&s=front" class="btn btn-info" role="button" target="_blank">Buy <span class="fa fa-shopping-cart"></span></a>
+                </footer>
+              </div>
+            </div>
+          </div>          
+          
+          <div class="col-sm-4">
+            <div class="thumbnail"> <img src="images/tee-swifter-colored-art-darktee.jpg" alt="Tee Thumb">
+              <div class="caption">
+                <h2 id="thumbnail-label3"><a href="https://teechip.com/swifter-colored-art-darktee#id=1&c=282828&sid=american-apparel-t-shirt&s=front" target="_blank">SwifterSwift - Colored Art / Dark Tee</a></h2>
+                <div class="price"><span>$13.00</span> - <span>$16.00</span></div>
+                <footer class="window-buttons">
+                	<a href="https://teechip.com/swifter-colored-art-darktee#id=1&c=282828&sid=american-apparel-t-shirt&s=front" class="btn btn-info" role="button" target="_blank">Buy <span class="fa fa-shopping-cart"></span></a>
+                </footer>
+              </div>
+            </div>
+          </div>          
+          
+          <div class="col-sm-4">
+            <div class="thumbnail"> <img src="images/tee-swifter-white-art-fire-colors.jpg" alt="Tee Thumb">
+              <div class="caption">
+                <h2 id="thumbnail-label3"><a href="https://teechip.com/swifter-white-art-fire-colors#id=0&c=F20202&sid=fruit-of-the-loom-cotton-t&s=front" target="_blank">SwifterSwift - White Art / Fire Colors</a></h2>
+                <div class="price"><span>$13.00</span> - <span>$17.00</span></div>
+                <footer class="window-buttons">
+                	<a href="https://teechip.com/swifter-white-art-fire-colors#id=0&c=F20202&sid=fruit-of-the-loom-cotton-t&s=front" class="btn btn-info" role="button" target="_blank">Buy <span class="fa fa-shopping-cart"></span></a>
+                </footer>
+              </div>
+            </div>
+          </div>          
+          
+          <div class="col-sm-4">
+            <div class="thumbnail"> <img src="images/tee-swifter-white-art-front-back.jpg" alt="Tee Thumb">
+              <div class="caption">
+                <h2 id="thumbnail-label3"><a href="https://teechip.com/swifter-white-art-front-back#id=2&c=F05438&sid=american-apparel-girly-t&s=front" target="_blank">SwifterSwift - White Art / Front-Back</a></h2>
+                <div class="price"><span>$27.00</span></div>
+                <footer class="window-buttons">
+                	<a href="https://teechip.com/swifter-white-art-front-back#id=2&c=F05438&sid=american-apparel-girly-t&s=front" class="btn btn-info" role="button" target="_blank">Buy <span class="fa fa-shopping-cart"></span></a>
+                </footer>
+              </div>
+            </div>
+          </div>          
+          
+          <div class="col-sm-4">
+            <div class="thumbnail"> <img src="images/tee-swifter-colored-art-white.jpg" alt="Tee Thumb">
+              <div class="caption">
+                <h2 id="thumbnail-label3"><a href="https://teechip.com/swifter-colored-art-white#id=1&c=F6F6F6&sid=american-apparel-t-shirt&s=front" target="_blank">SwifterSwift - Colored Art / White Tee</a></h2>
+                <div class="price"><span>$20.00</span></div>
+                <footer class="window-buttons">
+                	<a href="https://teechip.com/swifter-colored-art-white#id=1&c=F6F6F6&sid=american-apparel-t-shirt&s=front" class="btn btn-info" role="button" target="_blank">Buy <span class="fa fa-shopping-cart"></span></a>
+                </footer>
+              </div>
+            </div>
+          </div>          
+          
+          <div class="col-sm-4">
+            <div class="thumbnail"> <img src="images/tee-swifter-colored-block-art-white.jpg" alt="Tee Thumb">
+              <div class="caption">
+                <h2 id="thumbnail-label3"><a href="https://teechip.com/swifter-colored-block-art-white#id=16&c=F6F6F6&sid=fruit-of-the-loom-long-sleeve&s=front" target="_blank">SwifterSwift - Colored Block Art / White Tee</a></h2>
+                <div class="price"><span>$20.00</span></div>
+                <footer class="window-buttons">
+                	<a href="https://teechip.com/swifter-colored-block-art-white#id=16&c=F6F6F6&sid=fruit-of-the-loom-long-sleeve&s=front" class="btn btn-info" role="button" target="_blank">Buy <span class="fa fa-shopping-cart"></span></a>
+                </footer>
+              </div>
+            </div>
+          </div>          
+          
+          <div class="col-sm-4">
+            <div class="thumbnail"> <img src="images/tee-swifter-colored-block-art-darktee.jpg" alt="Tee Thumb">
+              <div class="caption">
+                <h2 id="thumbnail-label3"><a href="https://teechip.com/swifter-colored-block-art-darktee#id=1&c=1E2949&sid=american-apparel-t-shirt&s=front" target="_blank">SwifterSwift - Colored Block Art / Dark Tee</a></h2>
+                <div class="price"><span>$13.00</span> - <span>$16.00</span></div>
+                <footer class="window-buttons">
+                	<a href="https://teechip.com/swifter-colored-block-art-darktee#id=1&c=1E2949&sid=american-apparel-t-shirt&s=front" class="btn btn-info" role="button" target="_blank">Buy <span class="fa fa-shopping-cart"></span></a>
+                </footer>
+              </div>
+            </div>
+          </div>          
+
+          <div class="col-sm-4">
+            <div class="thumbnail"> <img src="images/tee-swifter-white-block-art-fire-colors.jpg" alt="Tee Thumb">
+              <div class="caption">
+                <h2 id="thumbnail-label3"><a href="https://teechip.com/swifter-white-block-art-fire-colors#id=0&c=FF6600&sid=fruit-of-the-loom-cotton-t&s=front" target="_blank">SwifterSwift - White Block Art / Fire Colors</a></h2>
+                <div class="price"><span>$13.00</span> - <span>$17.00</span></div>
+                <footer class="window-buttons">
+                	<a href="https://teechip.com/swifter-white-block-art-fire-colors#id=0&c=FF6600&sid=fruit-of-the-loom-cotton-t&s=front" class="btn btn-info" role="button" target="_blank">Buy <span class="fa fa-shopping-cart"></span></a>
+                </footer>
+              </div>
+            </div>
+          </div>               
+                   
+        </div>
+        <footer><p class="text-center"><br><a class="btn btn-default" href="https://teechip.com/stores/swifterswift" target="_blank" role="button">View Online Store »</a></p></footer>
+	</section>
+</div>
+<!-- END: Store -->
+
+<!-- START: Footer -->
+<div class="container-wrap-dark">
+	<footer class="container" id="footer">
+    	<div class="row">
+       	  <div class="col-xs-12">
+          	<h4 class="text-center" style="margin: 0px 0px 17px; font-weight: bold; color: rgb(85, 85, 85);">Share</h4>
+			<ul id="social-icons" class="list-unstyled inline-list text-center">
+            
+               <!-- Twitter -->
+               <li><a rel="nofollow" href="https://twitter.com/intent/tweet?url=https://swifterswift.com&text=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS&oq=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on Twitter"><span class="fa fa-twitter"></span></a></li> 
+                             
+               <!-- Google Plus -->               
+               <li><a rel="nofollow" href="https://plus.google.com/share?url=https://swifterswift.com&text=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS&oq=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on Google Plus"><span class="fa fa-google-plus"></span></a></li>
+               
+               <!-- Facebook -->              
+               <li><a rel="nofollow" href="http://www.facebook.com/sharer/sharer.php?u=https://swifterswift.com" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on Facebook"><span class="fa fa-facebook"></span></a></li>
+               
+               <!-- LinkedIn -->
+               <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://swifterswift.com&title=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS&oq=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS&summary=A collection of over 500 native Swift 3 extensions, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes –over 500 in 1– for iOS, macOS, tvOS and watchOS." onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on LinkedIn"><span class="fa fa-linkedin"></span></a></li>
+                             
+            </ul>       
+           </div>
+        <div class="col-xs-12 copy text-center">
+	      <p>Copyright &copy; 2017 <strong>SwifterSwift</strong> - All rights reserved.<br>
+          Webpage designed by <a href="https://github.com/lionbytes" class="designer" target="_blank"><img src="images/lionbytes.png" alt="Lionbytes" title="Lionbytes"></a><br><br></p>
+        </div>
+    </div>
+	</footer>
+</div>
+<!-- END: Footer -->
+
+</div>
+
+<!-- START: JAVASCRIPT CODE -->
+<script src="js/jquery.min.js"></script> 			<!-- <script src="https://code.jquery.com/jquery.js"></script>  -->
+<script src="js/bootstrap.min.js"></script>			<!-- Bootstrap -->
+<script src="js/jquery.easing.min.js"></script> <!-- Stickybar Smooth Scrolling -->
+
+<script src="owl-carousel/owl.carousel.js"></script><!-- Owl Carousel -->
+<script src="js/auxiliaries.js"></script>			<!-- Javascript Auxiliaries -->
+<script src="js/prism.js"></script>			<!-- Javascript Auxiliaries -->
+
+<!-- Enable the following script to make the nav a stickybar -->
+<script src="js/sticky-scroll.js"></script> <!-- Stickybar Smooth Scrolling -->
+
+<script type="text/javascript">
+	if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+	  var msViewportStyle = document.createElement('style')
+	  msViewportStyle.appendChild(
+	    document.createTextNode(
+	      '@-ms-viewport{width:auto!important}'
+	    )
+	  )
+	  document.querySelector('head').appendChild(msViewportStyle)
+	}
+</script>
+<!-- END: JAVASCRIPT CODE -->
+
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
