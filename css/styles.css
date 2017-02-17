@@ -215,6 +215,8 @@ select option {
   margin: 0 0 2px;
   text-indent: -1px;
 }
+#store .thumbnail .caption h2 a {  color: #555; }
+#store .thumbnail .caption h2 a:hover {  color: OrangeRed; }
 #store .thumbnail .caption .price {
   color: #777;
   display: block;
