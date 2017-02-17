@@ -42,5 +42,7 @@ jQuery(document).ready(function ($) {
 	// If Phone Screen
 	else {
 		$('#header .navbar').addClass("navbar-fixed-top"); 	// Make Phone navbar fixed
+		$('#header .navbar').removeClass("navbar-default"); 	// Remove default navbar
+		$('#header .navbar').addClass("navbar-inverse"); 	// Make Phone navbar black
 	}
 });
