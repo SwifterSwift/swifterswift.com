@@ -17,7 +17,7 @@
 <meta name="author" content="Lionbytes">
 
 <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
-<link type="text/css" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css" rel="stylesheet">
+<link type="text/css" href="http://necolas.github.io/normalize.css/3.0.2/normalize.css" rel="stylesheet">
 <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
 
 <!--[if lt IE 9]>
@@ -26,10 +26,6 @@
 <![endif]-->
 
 <link rel="icon" href="favicon.png" type="image/png" sizes="16x16">
-
-<!-- Owl Carousel Assets -->
-<link href="owl-carousel/owl.carousel.css" rel="stylesheet">
-<link href="owl-carousel/owl.theme.css" rel="stylesheet">
 
 <!-- Custom Styles -->
 <link type="text/css" href="css/styles.css" rel="stylesheet">
@@ -54,7 +50,7 @@
           <img src="images/logo-white.png" alt="SwifterSwift" class="branding-inverse hidden" /></a></h1>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="glyphicon glyphicon-menu-hamburger"></span></button>
         </header>
-
+        
         <!-- Main Nav Menu -->
         <div id="navbar" class="navbar-collapse collapse">
           <!-- Nav Menu -->
@@ -91,7 +87,7 @@
     <section class="container">
     	<div class="row">
         	<div class="col-xs-12">
-                <div class="badge-list">
+                <div class="badge-list"> 
                     <a href="https://travis-ci.org/SwifterSwift/SwifterSwift" target="_blank"><img src="https://api.travis-ci.org/SwifterSwift/SwifterSwift.svg?branch=master" alt="Build Status" /></a>
                     <a href="https://cocoapods.org/pods/SwifterSwift" target="_blank"><img src="https://img.shields.io/cocoapods/v/SwifterSwift.svg" alt="Cocoapods" /></a>
                     <a href="https://github.com/Carthage/Carthage" target="_blank"><img src="https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat" alt="Carthage compatible" /></a>
@@ -119,7 +115,7 @@
     </section>
   </div>
   <!-- END: What -->
-
+  
   <!-- START: Download -->
   <div class="container-wrap" id="downloads">
     <section class="container">
@@ -158,10 +154,10 @@ end</code></pre>
         You can install Carthage with Homebrew using the following command:</p>
 <pre class="language-bash"><code>$ brew update
 $ brew install carthage</code></pre>
-
+        
         <p>To integrate SwifterSwift into your Xcode project using Carthage, specify it in your Cartfile:</p>
         <pre class="language-bash"><code>github "SwifterSwift/SwifterSwift" ~> 1.5</code></pre>
-
+        
         <p>Run</p>
         <pre class="language-bash"><code>carthage update</code></pre>
         <p>to build the framework and drag the built `SwifterSwift.framework` into your Xcode project.</p>
@@ -175,7 +171,8 @@ let package = Package(
     name: "YOUR_PROJECT_NAME",
     targets: [],
     dependencies: [
-         .Package(url: "https://github.com/SwifterSwift/SwifterSwift.git", majorVersion: 1)
+         .Package(url: "https://github.com/SwifterSwift/SwifterSwift.git", 
+         versions: Version(1,4,0)..&lt;Version(2, .max, .max)),
     ]
 )</code></pre>
 
@@ -186,8 +183,8 @@ let package = Package(
       	<a href="https://github.com/SwifterSwift/SwifterSwift/archive/master.zip" class="btn btn-lg btn-danger"><strong>Swifter</strong> Swift Source</a><br><br><br>
       </div>
     </div>
-
-    </div>
+    
+    </div>    
 </section>
 </div>
 <!-- END: Download -->
@@ -195,12 +192,13 @@ let package = Package(
 <!-- START: Documentation -->
   <div class="container-wrap animate-ascend" id="docs">
     <section class="container">
-    	<br><br><br>
-    	<p class="text-center">Read the Documentation<br>
-        	<a href="https://github.com/SwifterSwift/SwifterSwiftDocs" class="transit" target="_blank"><span class="glyphicon glyphicon-book"></span></a>
-        </p>
-        <br>
-	</section>
+      <br><br>
+      <h1 class="text-center">Documentation </h1>
+      <p class="text-center">Read the docs:<br>
+        <a href="https://github.com/SwifterSwift/SwifterSwiftDocs" class="transit" target="_blank"><span class="glyphicon glyphicon-book"></span></a>
+      </p>
+      <br>
+      </section>
   </div>
 <!-- END: Documentation -->
 
@@ -214,20 +212,20 @@ let package = Package(
     <div class="row">
       <div class="col-sm-4"> <img alt="Generic placeholder image" src="images/icon-github.png" class="img-circle">
         <h2>Fork the Project</h2>
-
+        
 		<span style="display: block; margin-top: -10px;"><a class="github-button" href="https://github.com/SwifterSwift/SwifterSwift/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/SwifterSwift/SwifterSwift/network" data-count-api="/repos/SwifterSwift/SwifterSwift#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork SwifterSwift/SwifterSwift on GitHub">Fork</a></span>
         <p><a role="button" href="https://github.com/SwifterSwift/SwifterSwift/network/members" class="btn btn-danger" target="_blank">View details »</a></p>
       </div>
       <!-- /.col-lg-4 -->
       <div class="col-sm-4"> <img alt="Generic placeholder image" src="images/icon-ext.png" class="img-circle">
         <h2>Contributing guidelines for extensions</h2>
-
+        
         <p><a role="button" href="https://github.com/SwifterSwift/SwifterSwift/blob/master/CONTRIBUTING.md" class="btn btn-primary" target="_blank">View details »</a></p>
       </div>
       <!-- /.col-lg-4 -->
       <div class="col-sm-4"> <img alt="Generic placeholder image" src="images/icon-doc.png" class="img-circle">
         <h2>Contributing guidelines for documentations</h2>
-
+        
         <p><a role="button" href="https://github.com/SwifterSwift/SwifterSwiftDocs/blob/master/CONTRIBUTING.md" class="btn btn-danger" target="_blank">View details »</a></p>
       </div>
       <!-- /.col-lg-4 -->
@@ -268,7 +266,7 @@ let package = Package(
         <p>Also, you can support the project by purchasing <em class="text-danger"><strong>Swifter</strong>Swift</em> merch. Elegantly designed Regular Tees, American Apparel Tees, Sweatshirts, Classic Long Sleeve Tees, Unisex Tank Tops, Hoodies, Mugs, Posters, Mobile Cases, etc. Regular fit and relaxed fit for both gentlemen and ladies.</p>
         <p><strong>Note: </strong>each print has its own mug, mobile case and poster designs.<br>&nbsp;</p>
         <div class="row">
-
+         
           <div class="col-sm-4">
             <div class="thumbnail"> <img src="images/tee-swifter-colored-art-front-back.jpg" alt="Tee Thumb">
               <div class="caption">
@@ -279,8 +277,8 @@ let package = Package(
                 </footer>
               </div>
             </div>
-          </div>
-
+          </div>          
+          
           <div class="col-sm-4">
             <div class="thumbnail"> <img src="images/tee-swifter-colored-art-darktee.jpg" alt="Tee Thumb">
               <div class="caption">
@@ -291,8 +289,8 @@ let package = Package(
                 </footer>
               </div>
             </div>
-          </div>
-
+          </div>          
+          
           <div class="col-sm-4">
             <div class="thumbnail"> <img src="images/tee-swifter-white-art-fire-colors.jpg" alt="Tee Thumb">
               <div class="caption">
@@ -303,8 +301,8 @@ let package = Package(
                 </footer>
               </div>
             </div>
-          </div>
-
+          </div>          
+          
           <div class="col-sm-4">
             <div class="thumbnail"> <img src="images/tee-swifter-white-art-front-back.jpg" alt="Tee Thumb">
               <div class="caption">
@@ -315,8 +313,8 @@ let package = Package(
                 </footer>
               </div>
             </div>
-          </div>
-
+          </div>          
+          
           <div class="col-sm-4">
             <div class="thumbnail"> <img src="images/tee-swifter-colored-art-white.jpg" alt="Tee Thumb">
               <div class="caption">
@@ -327,8 +325,8 @@ let package = Package(
                 </footer>
               </div>
             </div>
-          </div>
-
+          </div>          
+          
           <div class="col-sm-4">
             <div class="thumbnail"> <img src="images/tee-swifter-colored-block-art-white.jpg" alt="Tee Thumb">
               <div class="caption">
@@ -339,8 +337,8 @@ let package = Package(
                 </footer>
               </div>
             </div>
-          </div>
-
+          </div>          
+          
           <div class="col-sm-4">
             <div class="thumbnail"> <img src="images/tee-swifter-colored-block-art-darktee.jpg" alt="Tee Thumb">
               <div class="caption">
@@ -351,7 +349,7 @@ let package = Package(
                 </footer>
               </div>
             </div>
-          </div>
+          </div>          
 
           <div class="col-sm-4">
             <div class="thumbnail"> <img src="images/tee-swifter-white-block-art-fire-colors.jpg" alt="Tee Thumb">
@@ -363,8 +361,8 @@ let package = Package(
                 </footer>
               </div>
             </div>
-          </div>
-
+          </div>               
+                   
         </div>
         <footer><p class="text-center"><br><a class="btn btn-default" href="https://teechip.com/stores/swifterswift" target="_blank" role="button">View Online Store »</a></p></footer>
 	</section>
@@ -378,20 +376,20 @@ let package = Package(
        	  <div class="col-xs-12">
           	<h4 class="text-center" style="margin: 0px 0px 17px; font-weight: bold; color: rgb(85, 85, 85);">Share</h4>
 			<ul id="social-icons" class="list-unstyled inline-list text-center">
-
+            
                <!-- Twitter -->
-               <li><a rel="nofollow" href="https://twitter.com/intent/tweet?url=https://swifterswift.com&text=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS&oq=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on Twitter"><span class="fa fa-twitter"></span></a></li>
-
-               <!-- Google Plus -->
+               <li><a rel="nofollow" href="https://twitter.com/intent/tweet?url=https://swifterswift.com&text=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS&oq=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on Twitter"><span class="fa fa-twitter"></span></a></li> 
+                             
+               <!-- Google Plus -->               
                <li><a rel="nofollow" href="https://plus.google.com/share?url=https://swifterswift.com&text=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS&oq=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on Google Plus"><span class="fa fa-google-plus"></span></a></li>
-
-               <!-- Facebook -->
-               <li><a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https://swifterswift.com" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on Facebook"><span class="fa fa-facebook"></span></a></li>
-
+               
+               <!-- Facebook -->              
+               <li><a rel="nofollow" href="http://www.facebook.com/sharer/sharer.php?u=https://swifterswift.com" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on Facebook"><span class="fa fa-facebook"></span></a></li>
+               
                <!-- LinkedIn -->
-               <li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://swifterswift.com&title=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS&oq=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS&summary=A collection of over 500 native Swift 3 extensions, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes –over 500 in 1– for iOS, macOS, tvOS and watchOS." onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on LinkedIn"><span class="fa fa-linkedin"></span></a></li>
-
-            </ul>
+               <li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://swifterswift.com&title=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS&oq=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS&summary=A collection of over 500 native Swift 3 extensions, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes –over 500 in 1– for iOS, macOS, tvOS and watchOS." onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on LinkedIn"><span class="fa fa-linkedin"></span></a></li>
+                             
+            </ul>       
            </div>
         <div class="col-xs-12 copy text-center">
 	      <p>Copyright &copy; 2017 <strong>SwifterSwift</strong> - All rights reserved.<br>
@@ -408,8 +406,6 @@ let package = Package(
 <script src="js/jquery.min.js"></script> 			<!-- <script src="https://code.jquery.com/jquery.js"></script>  -->
 <script src="js/bootstrap.min.js"></script>			<!-- Bootstrap -->
 <script src="js/jquery.easing.min.js"></script> <!-- Stickybar Smooth Scrolling -->
-
-<script src="owl-carousel/owl.carousel.js"></script><!-- Owl Carousel -->
 <script src="js/auxiliaries.js"></script>			<!-- Javascript Auxiliaries -->
 <script src="js/prism.js"></script>			<!-- Javascript Auxiliaries -->
 
@@ -427,18 +423,6 @@ let package = Package(
 	  document.querySelector('head').appendChild(msViewportStyle)
 	}
 </script>
-	
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-93518505-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-	
 <!-- END: JAVASCRIPT CODE -->
 
 
