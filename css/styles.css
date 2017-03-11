@@ -7,7 +7,6 @@
  */
 
 /* Open Sans font */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 
 @import url(font-awesome.css);
@@ -233,7 +232,7 @@ select option {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.thumbnails-hfixed .thumbnail .caption p { 
+.thumbnails-hfixed .thumbnail .caption p {
 	height: 74px;
 	overflow: hidden;
 }
@@ -363,7 +362,7 @@ select option {
   transform:rotate(180deg) scale(1.5,1.5);
 }
 .yellow{
-  left: 25px; 
+  left: 25px;
   bottom: 45px;
   width: 30px;
   height: 30px;
@@ -371,7 +370,7 @@ select option {
   box-shadow: 0px 0px 9px 4px gold;
 }
 .orange{
-  left:15px; 
+  left:15px;
   bottom: 40px;
   width: 40px;
   height: 40px;
@@ -386,7 +385,7 @@ select option {
 /*  box-shadow: 0px 0px 5px 1px OrangeRed;*/
 }
 .white{
-  left:25px; 
+  left:25px;
   bottom:50px;
   width: 30px;
   height: 30px;
@@ -395,7 +394,7 @@ select option {
 }
 .circle{
   border-radius: 50%;
-  position:absolute;  
+  position:absolute;
 }
 .swifter-link {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -517,7 +516,7 @@ code[class*="language-"], pre[class*="language-"] {
 }
 /*=========================== Documentation =======================*/
 #docs {
-	background:url(../images/swirl_pattern_dark.png) repeat center center; 
+	background:url(../images/swirl_pattern_dark.png) repeat center center;
 }
 #docs p {
   font-size: 10pt;
@@ -625,7 +624,7 @@ nav.navbar-default.navbar-fixed-top {
   margin-right: 20px;
   padding: 0;
 }
-.navbar > .container .navbar-brand, 
+.navbar > .container .navbar-brand,
 .navbar > .container-fluid .navbar-brand {
   margin-left: -5px;
 }
@@ -654,15 +653,15 @@ nav.navbar-default.navbar-fixed-top {
   background-color: transparent;
   color: OrangeRed;
 }
-.nav-flatusual nav.navbar .navbar-nav > .active > a, 
-.nav-flatusual nav.navbar .navbar-nav > .active > a:focus, 
+.nav-flatusual nav.navbar .navbar-nav > .active > a,
+.nav-flatusual nav.navbar .navbar-nav > .active > a:focus,
 .nav-flatusual nav.navbar .navbar-nav > .active > a:hover {
   background-color: transparent;
   color: OrangeRed;
   border-bottom: 2px solid OrangeRed;
 }
-.nav-flatusual nav.navbar .navbar-nav > .open > a, 
-.nav-flatusual nav.navbar .navbar-nav > .open > a:focus, 
+.nav-flatusual nav.navbar .navbar-nav > .open > a,
+.nav-flatusual nav.navbar .navbar-nav > .open > a:focus,
 .nav-flatusual nav.navbar .navbar-nav > .open > a:hover {
   background-color: transparent;
   color: OrangeRed;

@@ -14,4 +14,3 @@ jQuery(document).ready(function($){
 	});
 	
 });
-
