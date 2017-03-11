@@ -214,6 +214,8 @@ select option {
   margin: 0 0 2px;
   text-indent: -1px;
 }
+#store .thumbnail .caption h2 a {  color: #555; }
+#store .thumbnail .caption h2 a:hover {  color: OrangeRed; }
 #store .thumbnail .caption .price {
   color: #777;
   display: block;
@@ -826,8 +828,18 @@ h1, .h1 {
   width: 47px;
   height: 46px;
 }
-.navbar-inverse .navbar-toggle {
+#header .navbar .navbar-toggle.collapsed {
+  background-color: transparent;
+}
+#header .navbar .navbar-toggle.collapsed:focus {
+  background-color: transparent;
+}
+#header .navbar .navbar-toggle {
   border-color: #333;
+  background-color: #333;
+}
+#header .navbar .navbar-toggle:hover {
+  background-color: #333;
 }
 nav.navbar {
   margin: 0;
@@ -870,10 +882,17 @@ nav.navbar {
 #downloads .nav-tabs > li > a {
   border-radius: 5px;
 }
-#downloads .nav-tabs > li.active > a, #downloads .nav-tabs > li.active > a:hover, #downloads .nav-tabs > li.active > a:focus {
+#downloads .nav-tabs > li.active > a,
+#downloads .nav-tabs > li.active > a:hover,
+#downloads .nav-tabs > li.active > a:focus {
   background-color: #fff;
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.1);
   color: OrangeRed;
-  box-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+}
+#downloads .nav-tabs > li.active:last-child > a,
+#downloads .nav-tabs > li.active:last-child > a:hover,
+#downloads .nav-tabs > li.active:last-child > a:focus {
+  box-shadow: none;
 }
 #support .col-md-4 {
   text-align: center !important;
@@ -940,16 +959,3 @@ nav.navbar {
 @media (min-width: 468px) and (max-width: 767px) {
 
 }
-/*==========================================================================================*/
-/*=================================  Large Screens 1170px ==================================*/
-/*==========================================================================================*/
-@media (min-width: 1170px) { }
-
-/*==========================================================================================*/
-/*=============================== Very Large Screens 1600px ================================*/
-/*==========================================================================================*/
-@media (min-width: 1600px) { }
-/*=============================================================================*/
-/*============================ CUSTOM: Less than 1200px =======================*/
-/*=============================================================================*/
-@media (max-width: 1200px) and (min-width: 767px) { }
