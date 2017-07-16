@@ -205,49 +205,49 @@
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
-      "line": 67,
+      "line": 70,
       "symbol": "UIView.borderWidth",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
-      "line": 78,
+      "line": 81,
       "symbol": "UIView.cornerRadius",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
-      "line": 102,
+      "line": 105,
       "symbol": "UIView.height",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
-      "line": 135,
+      "line": 138,
       "symbol": "UIView.shadowColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
-      "line": 146,
+      "line": 152,
       "symbol": "UIView.shadowOffset",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
-      "line": 157,
+      "line": 163,
       "symbol": "UIView.shadowOpacity",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
-      "line": 168,
+      "line": 174,
       "symbol": "UIView.shadowRadius",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
