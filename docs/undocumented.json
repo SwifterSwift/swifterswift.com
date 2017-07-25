@@ -43,6 +43,125 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
+      "line": 24,
+      "symbol": "String.replacing(_:with:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
+      "line": 34,
+      "symbol": "String.firstCharacter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
+      "line": 47,
+      "symbol": "String.lastCharacter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
+      "line": 59,
+      "symbol": "String.double",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
+      "line": 69,
+      "symbol": "String.float",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
+      "line": 79,
+      "symbol": "String.float32",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
+      "line": 89,
+      "symbol": "String.float64",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
+      "line": 99,
+      "symbol": "String.int16",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
+      "line": 108,
+      "symbol": "String.int32",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
+      "line": 117,
+      "symbol": "String.int64",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
+      "line": 126,
+      "symbol": "String.int8",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
+      "line": 137,
+      "symbol": "String.subscript(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
+      "line": 151,
+      "symbol": "String.subscript(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
+      "line": 168,
+      "symbol": "String.subscript(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/Deprecated/UIKitDeprecated.swift",
+      "line": 18,
+      "symbol": "UIColor.redComponent",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/Deprecated/UIKitDeprecated.swift",
+      "line": 25,
+      "symbol": "UIColor.greenComponent",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/Deprecated/UIKitDeprecated.swift",
+      "line": 33,
+      "symbol": "UIColor.blueComponent",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIButtonExtensions.swift",
       "line": 18,
       "symbol": "UIButton.imageForDisabled",
@@ -128,14 +247,35 @@
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UITextFieldExtensions.swift",
-      "line": 27,
+      "line": 21,
+      "symbol": "UITextField.TextType.emailAddress",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UITextFieldExtensions.swift",
+      "line": 22,
+      "symbol": "UITextField.TextType.password",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UITextFieldExtensions.swift",
+      "line": 23,
+      "symbol": "UITextField.TextType.generic",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UITextFieldExtensions.swift",
+      "line": 93,
       "symbol": "UITextField.leftViewTintColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UITextFieldExtensions.swift",
-      "line": 45,
+      "line": 111,
       "symbol": "UITextField.rightViewTintColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
