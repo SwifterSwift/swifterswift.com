@@ -143,6 +143,12 @@
                 <a class="nav-group-task-link" href="../Extensions/Optional.html">Optional</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/SignedInteger.html">SignedInteger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/SignedNumber.html">SignedNumber</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/String.html">String</a>
               </li>
               <li class="nav-group-task">
@@ -352,6 +358,11 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>SwifterSwift: Distance from another CGPoint.</p>
+<pre class="highlight plaintext"><code>let point1 = CGPoint(x: 10, y: 10)
+let point2 = CGPoint(x: 30, y: 30)
+let distance = point1.distance(from: point2)
+//distance = 28.28
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -402,6 +413,11 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>SwifterSwift: Distance between two CGPoints.</p>
+<pre class="highlight plaintext"><code>let point1 = CGPoint(x: 10, y: 10)
+let point2 = CGPoint(x: 30, y: 30)
+let distance = CGPoint.distance(from: point2, to: point1)
+//Distance = 28.28
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -468,6 +484,11 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>SwifterSwift: Add two CGPoints.</p>
+<pre class="highlight plaintext"><code>let point1 = CGPoint(x: 10, y: 10)
+let point2 = CGPoint(x: 30, y: 30)
+let point = point1 + point2
+//point = CGPoint(x: 40, y: 40)
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -530,6 +551,11 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>SwifterSwift: Add a CGPoints to self.</p>
+<pre class="highlight plaintext"><code>let point1 = CGPoint(x: 10, y: 10)
+let point2 = CGPoint(x: 30, y: 30)
+point1 += point2
+//point1 = CGPoint(x: 40, y: 40)
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -588,6 +614,11 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>SwifterSwift: Subtract two CGPoints.</p>
+<pre class="highlight plaintext"><code>let point1 = CGPoint(x: 10, y: 10)
+let point2 = CGPoint(x: 30, y: 30)
+let point = point1 - point2
+//point = CGPoint(x: -20, y: -20)
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -650,6 +681,11 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>SwifterSwift: Subtract a CGPoints from self.</p>
+<pre class="highlight plaintext"><code>let point1 = CGPoint(x: 10, y: 10)
+let point2 = CGPoint(x: 30, y: 30)
+point1 -= point2
+//point1 = CGPoint(x: -20, y: -20)
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -708,6 +744,10 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>SwifterSwift: Multiply a CGPoint with a scalar</p>
+<pre class="highlight plaintext"><code>let point1 = CGPoint(x: 10, y: 10)
+let scalar = point1 * 5
+//scalar = CGPoint(x: 50, y: 50)
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -770,6 +810,10 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>SwifterSwift: Multiply self with a scalar</p>
+<pre class="highlight plaintext"><code>let point1 = CGPoint(x: 10, y: 10)
+point *= 5
+//point1 = CGPoint(x: 50, y: 50)
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -832,6 +876,10 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>SwifterSwift: Multiply a CGPoint with a scalar</p>
+<pre class="highlight plaintext"><code>let point1 = CGPoint(x: 10, y: 10)
+let scalar = 5 * point1
+//scalar = CGPoint(x: 50, y: 50)
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -888,7 +936,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="external">Omar Albeik</a>. All rights reserved. (Last updated: 2017-07-25)</p>
+      <p>&copy; 2017 <a class="link" href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="external">Omar Albeik</a>. All rights reserved. (Last updated: 2017-08-16)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
