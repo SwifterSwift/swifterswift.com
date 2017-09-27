@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           SwifterSwift Docs
         </a>
-         (93% documented)
+         (98% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -149,16 +149,19 @@
                 <a class="nav-group-task-link" href="../Extensions/UIColor.html">UIColor</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/UIColor/social.html">– social</a>
+                <a class="nav-group-task-link" href="../Extensions/UIColor/Social.html">– Social</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/UIColor/material.html">– material</a>
+                <a class="nav-group-task-link" href="../Extensions/UIColor/Material.html">– Material</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/UIColor/css.html">– css</a>
+                <a class="nav-group-task-link" href="../Extensions/UIColor/CSS.html">– CSS</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/UIColor/flatUI.html">– flatUI</a>
+                <a class="nav-group-task-link" href="../Extensions/UIColor/FlatUI.html">– FlatUI</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIFont.html">UIFont</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UIImage.html">UIImage</a>
@@ -213,9 +216,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UIViewController.html">UIViewController</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/UIWebView.html">UIWebView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/URL.html">URL</a>
@@ -568,11 +568,11 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>SwifterSwift: Year.</p>
+<pre class="highlight plaintext"><code>Date().year -&gt; 2017
 
-<p>Date().year -&gt; 2017</p>
-
-<p>var someDate = Date()
-someDate.year = 2000 // sets someDate&rsquo;s year to 2000</p>
+var someDate = Date()
+someDate.year = 2000 // sets someDate's year to 2000
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -600,11 +600,11 @@ someDate.year = 2000 // sets someDate&rsquo;s year to 2000</p>
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>SwifterSwift: Month.</p>
+<pre class="highlight plaintext"><code>Date().month -&gt; 1
 
-<p>Date().month -&gt; 1</p>
-
-<p>var someDate = Date()
-someDate.year = 10 // sets someDate&rsquo;s month to 10.</p>
+var someDate = Date()
+someDate.year = 10 // sets someDate's month to 10.
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -664,8 +664,8 @@ someDate.day = 1 // sets someDate's day of month to 1.
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>SwifterSwift: Weekday.</p>
-
-<p>Date().weekOfMonth -&gt; 5 // fifth day in the current week.</p>
+<pre class="highlight plaintext"><code>Date().weekOfMonth -&gt; 5 // fifth day in the current week.
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -2207,6 +2207,80 @@ Date().monthName(ofStyle: .full) -&gt; "January"
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10Foundation4DateV12SwifterSwiftE9isBetweenSbAC_ACSb13includeBoundstF"></a>
+                    <a name="//apple_ref/swift/Method/isBetween(_:_:includeBounds:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10Foundation4DateV12SwifterSwiftE9isBetweenSbAC_ACSb13includeBoundstF">isBetween(_:_:includeBounds:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwifterSwift: check if a date is between two other dates</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isBetween</span><span class="p">(</span><span class="n">_</span> <span class="nv">startDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="n">_</span> <span class="nv">endDate</span><span class="p">:</span> <span class="kt">Date</span><span class="p">,</span> <span class="nv">includeBounds</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>startDate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>start date to compare self to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>endDate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>endDate date to compare self to.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>includeBounds</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true if the start and end date should be included (default is false)</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if the date is between the two given dates.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="task-group">
@@ -2481,7 +2555,7 @@ Date().monthName(ofStyle: .full) -&gt; "January"
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="external">Omar Albeik</a>. All rights reserved. (Last updated: 2017-09-16)</p>
+      <p>&copy; 2017 <a class="link" href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="external">Omar Albeik</a>. All rights reserved. (Last updated: 2017-09-27)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
