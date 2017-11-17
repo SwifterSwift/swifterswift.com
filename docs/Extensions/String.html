@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           SwifterSwift Docs
         </a>
-         (98% documented)
+         (97% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -83,10 +83,28 @@
                 <a class="nav-group-task-link" href="../Extensions/CLLocation.html">CLLocation</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Calendar.html">Calendar</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Character.html">Character</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Collection.html">Collection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Color.html">Color</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Color/Social.html">– Social</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Color/Material.html">– Material</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Color/CSS.html">– CSS</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Color/FlatUI.html">– FlatUI</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Data.html">Data</a>
@@ -122,6 +140,9 @@
                 <a class="nav-group-task-link" href="../Extensions/NSAttributedString.html">NSAttributedString</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/NSPredicate.html">NSPredicate</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Optional.html">Optional</a>
               </li>
               <li class="nav-group-task">
@@ -144,21 +165,6 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UICollectionView.html">UICollectionView</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/UIColor.html">UIColor</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/UIColor/Social.html">– Social</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/UIColor/Material.html">– Material</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/UIColor/CSS.html">– CSS</a>
-              </li>
-              <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Extensions/UIColor/FlatUI.html">– FlatUI</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UIFont.html">UIFont</a>
@@ -339,6 +345,293 @@
 
         <section class="section">
           <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SS12SwifterSwiftE6lengthSiv"></a>
+                    <a name="//apple_ref/swift/Property/length" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SS12SwifterSwiftE6lengthSiv">length</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwifterSwift: Number of characters in string.</p>
+<pre class="highlight plaintext"><code>   "Hello world!".length -&gt; 12
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SS12SwifterSwiftE7slicingSSSgSi2at_tF"></a>
+                    <a name="//apple_ref/swift/Method/slicing(at:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SS12SwifterSwiftE7slicingSSSgSi2at_tF">slicing(at:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwifterSwift: Sliced string from a start index.</p>
+<pre class="highlight plaintext"><code>   "Hello World".slicing(at: 6) -&gt; "World"
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">slicing</span><span class="p">(</span><span class="n">at</span> <span class="nv">i</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>i</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>string index the slicing should start from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>sliced substring starting from start index (if applicable) (example: <q>Hello world</q>.slicing(at: 6) -&gt; <q>world</q>)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SS12SwifterSwiftE7slicingSSSgSi4from_Si2totF"></a>
+                    <a name="//apple_ref/swift/Method/slicing(from:to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SS12SwifterSwiftE7slicingSSSgSi4from_Si2totF">slicing(from:to:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwifterSwift: Sliced string from a start index to an end index.</p>
+<pre class="highlight plaintext"><code>   "Hello World".slicing(from: 6, to: 11) -&gt; "World"
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">slicing</span><span class="p">(</span><span class="n">from</span> <span class="nv">start</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">to</span> <span class="nv">end</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>start</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>string index the slicing should start from.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>end</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>string index the slicing should end at.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>sliced substring starting from start index, and ends at end index (if applicable) (example: <q>Hello World</q>.slicing(from: 6, to: 11) -&gt; <q>World</q>)</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SS12SwifterSwiftE10firstIndexSiSgSS2of_tF"></a>
+                    <a name="//apple_ref/swift/Method/firstIndex(of:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SS12SwifterSwiftE10firstIndexSiSgSS2of_tF">firstIndex(of:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwifterSwift: First index of substring in string.</p>
+<pre class="highlight plaintext"><code>   "Hello World!".firstIndex(of: "l") -&gt; 2
+   "Hello World!".firstIndex(of: "s") -&gt; nil
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">firstIndex</span><span class="p">(</span><span class="n">of</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>string</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>substring to search for.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>first index of substring in string (if applicable).</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SS12SwifterSwiftE8splittedSaySSGs9CharacterV2by_tF"></a>
+                    <a name="//apple_ref/swift/Method/splitted(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SS12SwifterSwiftE8splittedSaySSGs9CharacterV2by_tF">splitted(by:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwifterSwift: Array of strings separated by given string.</p>
+<pre class="highlight plaintext"><code>   "hello World".splited(by: " ") -&gt; ["hello", "World"]
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">splitted</span><span class="p">(</span><span class="n">by</span> <span class="nv">separator</span><span class="p">:</span> <span class="kt">Character</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>separator</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>separator to split string by.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>array of strings separated by given string.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SS12SwifterSwiftE8reversedSSyF"></a>
+                    <a name="//apple_ref/swift/Method/reversed()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SS12SwifterSwiftE8reversedSSyF">reversed()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwifterSwift: Reversed string.</p>
+<pre class="highlight plaintext"><code>   "foo".reversed() -&gt; "oof"
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">reversed</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The reversed string.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
             <div class="task-group">
               <ul class="item-container">
                 <li class="item">
@@ -902,35 +1195,6 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS12SwifterSwiftE6lengthSiv"></a>
-                    <a name="//apple_ref/swift/Property/length" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS12SwifterSwiftE6lengthSiv">length</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>SwifterSwift: Number of characters in string.</p>
-<pre class="highlight plaintext"><code>"Hello world!".length -&gt; 12
-</code></pre>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:SS12SwifterSwiftE4boolSbSgv"></a>
                     <a name="//apple_ref/swift/Property/bool" class="dashAnchor"></a>
                     <a class="token" href="#/s:SS12SwifterSwiftE4boolSbSgv">bool</a>
@@ -1382,9 +1646,38 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS12SwifterSwiftE19mostCommonCharacterSSyF"></a>
+                    <a name="/s:SS12SwifterSwiftE9localizedS2S7comment_tF"></a>
+                    <a name="//apple_ref/swift/Method/localized(comment:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SS12SwifterSwiftE9localizedS2S7comment_tF">localized(comment:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwifterSwift: Returns a localized string, with an optional comment for translators.</p>
+<pre class="highlight plaintext"><code>   "Hello world".localized -&gt; Hallo Welt
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">localized</span><span class="p">(</span><span class="nv">comment</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">""</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SS12SwifterSwiftE19mostCommonCharacters0E0VSgyF"></a>
                     <a name="//apple_ref/swift/Method/mostCommonCharacter()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS12SwifterSwiftE19mostCommonCharacterSSyF">mostCommonCharacter()</a>
+                    <a class="token" href="#/s:SS12SwifterSwiftE19mostCommonCharacters0E0VSgyF">mostCommonCharacter()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1401,46 +1694,13 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">mostCommonCharacter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">mostCommonCharacter</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Character</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
                       <div>
                         <h4>Return Value</h4>
                         <p>The most common character.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:SS12SwifterSwiftE8reversedSSyF"></a>
-                    <a name="//apple_ref/swift/Method/reversed()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS12SwifterSwiftE8reversedSSyF">reversed()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>SwifterSwift: Reversed string.</p>
-<pre class="highlight plaintext"><code>"foo".reversed() -&gt; "oof"
-</code></pre>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">reversed</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>The reversed string.</p>
                       </div>
                     </section>
                   </div>
@@ -1547,9 +1807,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS12SwifterSwiftE9subscriptSSSgSi4safe_tci"></a>
+                    <a name="/s:SS12SwifterSwiftE9subscripts9CharacterVSgSi4safe_tci"></a>
                     <a name="//apple_ref/swift/Method/subscript(safe:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS12SwifterSwiftE9subscriptSSSgSi4safe_tci">subscript(safe:)</a>
+                    <a class="token" href="#/s:SS12SwifterSwiftE9subscripts9CharacterVSgSi4safe_tci">subscript(safe:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1567,7 +1827,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="n">safe</span> <span class="nv">i</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">subscript</span><span class="p">(</span><span class="n">safe</span> <span class="nv">i</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Character</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -1976,59 +2236,6 @@ print(str) // prints "someVariableName"
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS12SwifterSwiftE10firstIndexSiSgSS2of_tF"></a>
-                    <a name="//apple_ref/swift/Method/firstIndex(of:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS12SwifterSwiftE10firstIndexSiSgSS2of_tF">firstIndex(of:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>SwifterSwift: First index of substring in string.</p>
-<pre class="highlight plaintext"><code>"Hello World!".firstIndex(of: "l") -&gt; 2
-"Hello World!".firstIndex(of: "s") -&gt; nil
-</code></pre>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">firstIndex</span><span class="p">(</span><span class="n">of</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>string</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>substring to search for.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>first index of substring in string (if applicable).</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:SS12SwifterSwiftE8latinizeyyF"></a>
                     <a name="//apple_ref/swift/Method/latinize()" class="dashAnchor"></a>
                     <a class="token" href="#/s:SS12SwifterSwiftE8latinizeyyF">latinize()</a>
@@ -2150,7 +2357,7 @@ print(str) // prints "Hello World!"
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>SwifterSwift: Sliced string from a start index with length.</p>
-<pre class="highlight plaintext"><code>"Hello World".slicing(from: 6, length: 5) -&gt; "World"
+<pre class="highlight plaintext"><code>   "Hello World".slicing(from: 6, length: 5) -&gt; "World"
 </code></pre>
 
                       </div>
@@ -2265,70 +2472,6 @@ print(str) // prints "World"
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS12SwifterSwiftE7slicingSSSgSi4from_Si2totF"></a>
-                    <a name="//apple_ref/swift/Method/slicing(from:to:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS12SwifterSwiftE7slicingSSSgSi4from_Si2totF">slicing(from:to:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>SwifterSwift: Sliced string from a start index to an end index.</p>
-<pre class="highlight plaintext"><code>"Hello World".slicing(from: 6, to: 11) -&gt; "World"
-</code></pre>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">slicing</span><span class="p">(</span><span class="n">from</span> <span class="nv">start</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">to</span> <span class="nv">end</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>start</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>string index the slicing should start from.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>end</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>string index the slicing should end at.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>sliced substring starting from start index, and ends at end index (if applicable) (example: <q>Hello World</q>.slicing(from: 6, to: 11) -&gt; <q>World</q>)</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:SS12SwifterSwiftE5sliceySi4from_Si2totF"></a>
                     <a name="//apple_ref/swift/Method/slice(from:to:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:SS12SwifterSwiftE5sliceySi4from_Si2totF">slice(from:to:)</a>
@@ -2391,58 +2534,6 @@ print(str) // prints "World"
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:SS12SwifterSwiftE7slicingSSSgSi2at_tF"></a>
-                    <a name="//apple_ref/swift/Method/slicing(at:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS12SwifterSwiftE7slicingSSSgSi2at_tF">slicing(at:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>SwifterSwift: Sliced string from a start index.</p>
-<pre class="highlight plaintext"><code>"Hello World".slicing(at: 6) -&gt; "World"
-</code></pre>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">slicing</span><span class="p">(</span><span class="n">at</span> <span class="nv">i</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>i</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>string index the slicing should start from.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>sliced substring starting from start index (if applicable) (example: <q>Hello world</q>.slicing(at: 6) -&gt; <q>world</q>)</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:SS12SwifterSwiftE5sliceySi2at_tF"></a>
                     <a name="//apple_ref/swift/Method/slice(at:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:SS12SwifterSwiftE5sliceySi2at_tF">slice(at:)</a>
@@ -2486,58 +2577,6 @@ print(str) // prints "World"
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:SS12SwifterSwiftE8splittedSaySSGs9CharacterV2by_tF"></a>
-                    <a name="//apple_ref/swift/Method/splitted(by:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:SS12SwifterSwiftE8splittedSaySSGs9CharacterV2by_tF">splitted(by:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>SwifterSwift: Array of strings separated by given string.</p>
-<pre class="highlight plaintext"><code>"hello World".splited(by: " ") -&gt; ["hello", "World"]
-</code></pre>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">splitted</span><span class="p">(</span><span class="n">by</span> <span class="nv">separator</span><span class="p">:</span> <span class="kt">Character</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>separator</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>separator to split string by.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>array of strings separated by given string.</p>
                       </div>
                     </section>
                   </div>
@@ -2900,7 +2939,7 @@ print(str) // prints "it's%20easy%20to%20encode%20strings"
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">matches</span><span class="p">(</span><span class="nv">pattern</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">matches</span><span class="p">(</span><span class="nv">pattern</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -2926,6 +2965,258 @@ print(str) // prints "it's%20easy%20to%20encode%20strings"
                       <div>
                         <h4>Return Value</h4>
                         <p>true if string matches the pattern.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SS12SwifterSwiftE8padStartySi_SS4withtF"></a>
+                    <a name="//apple_ref/swift/Method/padStart(_:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SS12SwifterSwiftE8padStartySi_SS4withtF">padStart(_:with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwifterSwift: Pad string to fit the length parameter size with another string in the start.</p>
+
+<p><q>hue</q>.padStart(10) -&gt; <q>hue</q>
+  <q>hue</q>.padStart(10, with: <q>br</q>) -&gt; <q>brbrbrbhue</q></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">padStart</span><span class="p">(</span><span class="n">_</span> <span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">with</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">" "</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>length</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The target length to pad.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>string</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Pad string. Default is &ldquo; &rdquo;.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SS12SwifterSwiftE12paddingStartSSSi_SS4withtF"></a>
+                    <a name="//apple_ref/swift/Method/paddingStart(_:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SS12SwifterSwiftE12paddingStartSSSi_SS4withtF">paddingStart(_:with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwifterSwift: Returns a string by padding to fit the length parameter size with another string in the start.</p>
+
+<p><q>hue</q>.paddingStart(10) -&gt; <q>hue</q>
+  <q>hue</q>.paddingStart(10, with: <q>br</q>) -&gt; <q>brbrbrbhue</q></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">paddingStart</span><span class="p">(</span><span class="n">_</span> <span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">with</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">" "</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>length</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The target length to pad.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>string</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Pad string. Default is &ldquo; &rdquo;.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The string with the padding on the start.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SS12SwifterSwiftE6padEndySi_SS4withtF"></a>
+                    <a name="//apple_ref/swift/Method/padEnd(_:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SS12SwifterSwiftE6padEndySi_SS4withtF">padEnd(_:with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwifterSwift: Pad string to fit the length parameter size with another string in the start.</p>
+
+<p><q>hue</q>.padEnd(10) -&gt; <q>hue</q>
+  <q>hue</q>.padEnd(10, with: <q>br</q>) -&gt; <q>huebrbrbrb</q></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">padEnd</span><span class="p">(</span><span class="n">_</span> <span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">with</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">" "</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>length</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The target length to pad.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>string</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Pad string. Default is &ldquo; &rdquo;.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SS12SwifterSwiftE10paddingEndSSSi_SS4withtF"></a>
+                    <a name="//apple_ref/swift/Method/paddingEnd(_:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SS12SwifterSwiftE10paddingEndSSSi_SS4withtF">paddingEnd(_:with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwifterSwift: Returns a string by padding to fit the length parameter size with another string in the end.</p>
+
+<p><q>hue</q>.paddingEnd(10) -&gt; <q>hue</q>
+  <q>hue</q>.paddingEnd(10, with: <q>br</q>) -&gt; <q>huebrbrbrb</q></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">paddingEnd</span><span class="p">(</span><span class="n">_</span> <span class="nv">length</span><span class="p">:</span> <span class="kt">Int</span><span class="p">,</span> <span class="n">with</span> <span class="nv">string</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">" "</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>length</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The target length to pad.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>string</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Pad string. Default is &ldquo; &rdquo;.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The string with the padding on the end.</p>
                       </div>
                     </section>
                   </div>
@@ -3171,7 +3462,7 @@ String(base64: "hello") = nil
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="external">Omar Albeik</a>. All rights reserved. (Last updated: 2017-09-27)</p>
+      <p>&copy; 2017 <a class="link" href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="external">Omar Albeik</a>. All rights reserved. (Last updated: 2017-11-17)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

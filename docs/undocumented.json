@@ -1,131 +1,201 @@
 {
   "warnings": [
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/v3/Sources/Extensions/Foundation/DateExtensions.swift",
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/DateExtensions.swift",
       "line": 19,
       "symbol": "Date.DayNameStyle.threeLetters",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/v3/Sources/Extensions/Foundation/DateExtensions.swift",
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/DateExtensions.swift",
       "line": 20,
       "symbol": "Date.DayNameStyle.oneLetter",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/v3/Sources/Extensions/Foundation/DateExtensions.swift",
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/DateExtensions.swift",
       "line": 21,
       "symbol": "Date.DayNameStyle.full",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/v3/Sources/Extensions/Foundation/DateExtensions.swift",
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/DateExtensions.swift",
       "line": 30,
       "symbol": "Date.MonthNameStyle.threeLetters",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/v3/Sources/Extensions/Foundation/DateExtensions.swift",
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/DateExtensions.swift",
       "line": 31,
       "symbol": "Date.MonthNameStyle.oneLetter",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/v3/Sources/Extensions/Foundation/DateExtensions.swift",
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/DateExtensions.swift",
       "line": 32,
       "symbol": "Date.MonthNameStyle.full",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/v3/Sources/Extensions/UIKit/UITextFieldExtensions.swift",
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
+      "line": 15,
+      "symbol": "Date.isInThisWeek",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
+      "line": 21,
+      "symbol": "Date.isInThisMonth",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
+      "line": 27,
+      "symbol": "Date.isInThisYear",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Shared/ColorExtensions.swift",
+      "line": null,
+      "symbol": "Color",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Shared/ColorExtensions.swift",
+      "line": null,
+      "symbol": "Color",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Shared/ColorExtensions.swift",
+      "line": null,
+      "symbol": "Color",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Shared/ColorExtensions.swift",
+      "line": null,
+      "symbol": "Color",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Shared/ColorExtensions.swift",
+      "line": null,
+      "symbol": "Color",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Shared/ColorExtensions.swift",
+      "line": null,
+      "symbol": "Color",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Shared/ColorExtensions.swift",
+      "line": null,
+      "symbol": "Color",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UITextFieldExtensions.swift",
       "line": 21,
       "symbol": "UITextField.TextType.emailAddress",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/v3/Sources/Extensions/UIKit/UITextFieldExtensions.swift",
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UITextFieldExtensions.swift",
       "line": 22,
       "symbol": "UITextField.TextType.password",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/v3/Sources/Extensions/UIKit/UITextFieldExtensions.swift",
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UITextFieldExtensions.swift",
       "line": 23,
       "symbol": "UITextField.TextType.generic",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/v3/Sources/Extensions/UIKit/UIViewExtensions.swift",
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
       "line": 19,
       "symbol": "ShakeDirection.horizontal",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/v3/Sources/Extensions/UIKit/UIViewExtensions.swift",
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
       "line": 20,
       "symbol": "ShakeDirection.vertical",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/v3/Sources/Extensions/UIKit/UIViewExtensions.swift",
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
       "line": 28,
       "symbol": "AngleUnit.degrees",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/v3/Sources/Extensions/UIKit/UIViewExtensions.swift",
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
       "line": 29,
       "symbol": "AngleUnit.radians",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/v3/Sources/Extensions/UIKit/UIViewExtensions.swift",
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
       "line": 39,
       "symbol": "ShakeAnimationType.linear",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/v3/Sources/Extensions/UIKit/UIViewExtensions.swift",
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
       "line": 40,
       "symbol": "ShakeAnimationType.easeIn",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/v3/Sources/Extensions/UIKit/UIViewExtensions.swift",
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
       "line": 41,
       "symbol": "ShakeAnimationType.easeOut",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/v3/Sources/Extensions/UIKit/UIViewExtensions.swift",
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
       "line": 42,
       "symbol": "ShakeAnimationType.easeInOut",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/v3/Sources/Extensions/UIKit/UIViewExtensions.swift",
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
       "line": 98,
       "symbol": "UIView.height",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     }
   ],
-  "source_directory": "/Users/omar/Desktop/Opensource/SwifterSwift/v3"
+  "source_directory": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift"
 }
