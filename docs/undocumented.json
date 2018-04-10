@@ -2,68 +2,47 @@
   "warnings": [
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/DateExtensions.swift",
-      "line": 19,
+      "line": 21,
       "symbol": "Date.DayNameStyle.threeLetters",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/DateExtensions.swift",
-      "line": 20,
+      "line": 22,
       "symbol": "Date.DayNameStyle.oneLetter",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/DateExtensions.swift",
-      "line": 21,
+      "line": 23,
       "symbol": "Date.DayNameStyle.full",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/DateExtensions.swift",
-      "line": 30,
+      "line": 32,
       "symbol": "Date.MonthNameStyle.threeLetters",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/DateExtensions.swift",
-      "line": 31,
+      "line": 33,
       "symbol": "Date.MonthNameStyle.oneLetter",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/DateExtensions.swift",
-      "line": 32,
+      "line": 34,
       "symbol": "Date.MonthNameStyle.full",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
-      "line": 15,
-      "symbol": "Date.isInThisWeek",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
-      "line": 21,
-      "symbol": "Date.isInThisMonth",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Foundation/Deprecated/FoundationDeprecated.swift",
-      "line": 27,
-      "symbol": "Date.isInThisYear",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Shared/ColorExtensions.swift",
       "line": null,
       "symbol": "Color",
@@ -110,88 +89,165 @@
       "line": null,
       "symbol": "Color",
       "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/Shared/ColorExtensions.swift",
+      "line": 11,
+      "symbol": "Color",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/ArrayExtensions.swift",
+      "line": 212,
+      "symbol": "Array.keep(while:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/ArrayExtensions.swift",
+      "line": 354,
+      "symbol": "Array.rotate(by:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/ArrayExtensions.swift",
+      "line": 365,
+      "symbol": "Array.shuffle()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/ArrayExtensions.swift",
+      "line": 419,
+      "symbol": "Array.sort(by:ascending:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/ArrayExtensions.swift",
+      "line": 429,
+      "symbol": "Array.sort(by:ascending:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/ArrayExtensions.swift",
+      "line": 482,
+      "symbol": "Array.removeAll(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/ArrayExtensions.swift",
+      "line": 495,
+      "symbol": "Array.removeAll(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/Deprecated/SwiftStdlibDeprecated.swift",
+      "line": 33,
+      "symbol": "Bool.toggle()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/SignedIntegerExtensions.swift",
+      "line": 90,
+      "symbol": "SignedInteger.ordinalString(locale:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/SignedNumericExtensions.swift",
+      "line": 39,
+      "symbol": "SignedNumeric.spelledOutString(locale:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UITextFieldExtensions.swift",
-      "line": 21,
+      "line": 22,
       "symbol": "UITextField.TextType.emailAddress",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UITextFieldExtensions.swift",
-      "line": 22,
+      "line": 23,
       "symbol": "UITextField.TextType.password",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UITextFieldExtensions.swift",
-      "line": 23,
+      "line": 24,
       "symbol": "UITextField.TextType.generic",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
-      "line": 19,
+      "line": 20,
       "symbol": "ShakeDirection.horizontal",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
-      "line": 20,
+      "line": 21,
       "symbol": "ShakeDirection.vertical",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
-      "line": 28,
+      "line": 29,
       "symbol": "AngleUnit.degrees",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
-      "line": 29,
+      "line": 30,
       "symbol": "AngleUnit.radians",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
-      "line": 39,
+      "line": 40,
       "symbol": "ShakeAnimationType.linear",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
-      "line": 40,
+      "line": 41,
       "symbol": "ShakeAnimationType.easeIn",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
-      "line": 41,
+      "line": 42,
       "symbol": "ShakeAnimationType.easeOut",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
-      "line": 42,
+      "line": 43,
       "symbol": "ShakeAnimationType.easeInOut",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
-      "line": 98,
+      "line": 97,
       "symbol": "UIView.height",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
