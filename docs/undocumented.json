@@ -100,49 +100,49 @@
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/ArrayExtensions.swift",
-      "line": 212,
+      "line": 43,
       "symbol": "Array.keep(while:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/ArrayExtensions.swift",
-      "line": 354,
+      "line": 133,
       "symbol": "Array.rotate(by:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/ArrayExtensions.swift",
-      "line": 365,
+      "line": 144,
       "symbol": "Array.shuffle()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/ArrayExtensions.swift",
-      "line": 419,
+      "line": 198,
       "symbol": "Array.sort(by:ascending:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/ArrayExtensions.swift",
-      "line": 429,
+      "line": 208,
       "symbol": "Array.sort(by:ascending:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/ArrayExtensions.swift",
-      "line": 482,
+      "line": 242,
       "symbol": "Array.removeAll(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/ArrayExtensions.swift",
-      "line": 495,
+      "line": 255,
       "symbol": "Array.removeAll(_:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -156,14 +156,14 @@
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/SignedIntegerExtensions.swift",
-      "line": 90,
+      "line": 88,
       "symbol": "SignedInteger.ordinalString(locale:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/SignedNumericExtensions.swift",
-      "line": 39,
+      "line": 38,
       "symbol": "SignedNumeric.spelledOutString(locale:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -247,7 +247,7 @@
     },
     {
       "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/UIKit/UIViewExtensions.swift",
-      "line": 97,
+      "line": 88,
       "symbol": "UIView.height",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"

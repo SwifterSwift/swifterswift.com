@@ -107,6 +107,9 @@
                 <a class="nav-group-task-link" href="../Extensions/Color/FlatUI.html">– FlatUI</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Comparable.html">Comparable</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Data.html">Data</a>
               </li>
               <li class="nav-group-task">
@@ -152,6 +155,9 @@
                 <a class="nav-group-task-link" href="../Extensions/Optional.html">Optional</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/SKNode.html">SKNode</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Sequence.html">Sequence</a>
               </li>
               <li class="nav-group-task">
@@ -185,6 +191,9 @@
                 <a class="nav-group-task-link" href="../Extensions/UIFont.html">UIFont</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIGestureRecognizer.html">UIGestureRecognizer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UIImage.html">UIImage</a>
               </li>
               <li class="nav-group-task">
@@ -201,6 +210,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UINavigationItem.html">UINavigationItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIScrollView.html">UIScrollView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UISearchBar.html">UISearchBar</a>
@@ -240,6 +252,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UIViewController.html">UIViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIWindow.html">UIWindow</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/URL.html">URL</a>
@@ -384,9 +399,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s10DictionaryV12SwifterSwiftE9removeAllySayxG4keys_tF"></a>
+                    <a name="/s:s10DictionaryV12SwifterSwiftE9removeAllyqd__4keys_t7ElementQyd__Rszs8SequenceRd__lF"></a>
                     <a name="//apple_ref/swift/Method/removeAll(keys:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s10DictionaryV12SwifterSwiftE9removeAllySayxG4keys_tF">removeAll(keys:)</a>
+                    <a class="token" href="#/s:s10DictionaryV12SwifterSwiftE9removeAllyqd__4keys_t7ElementQyd__Rszs8SequenceRd__lF">removeAll(keys:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -394,7 +409,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>SwifterSwift: Remove all keys of the dictionary.</p>
+                        <p>SwifterSwift: Remove all keys contained in the keys parameter from the dictionary.</p>
 <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">dict</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">"key1"</span> <span class="p">:</span> <span class="s">"value1"</span><span class="p">,</span> <span class="s">"key2"</span> <span class="p">:</span> <span class="s">"value2"</span><span class="p">,</span> <span class="s">"key3"</span> <span class="p">:</span> <span class="s">"value3"</span><span class="p">]</span>
 <span class="n">dict</span><span class="o">.</span><span class="nf">removeAll</span><span class="p">(</span><span class="nv">keys</span><span class="p">:</span> <span class="p">[</span><span class="s">"key1"</span><span class="p">,</span> <span class="s">"key2"</span><span class="p">])</span>
 <span class="n">dict</span><span class="o">.</span><span class="n">keys</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="s">"key3"</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">true</span>
@@ -407,7 +422,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">removeAll</span><span class="p">(</span><span class="nv">keys</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span><span class="p">])</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="n">removeAll</span><span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">keys</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span> <span class="k">where</span> <span class="kt">Key</span> <span class="o">==</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">S</span> <span class="p">:</span> <span class="kt">Sequence</span></code></pre>
 
                         </div>
                       </div>
@@ -552,56 +567,6 @@ returns the following string:
                     </section>
                   </div>
                 </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:s10DictionaryV12SwifterSwiftE5countSiSbx3key_q_5valuet_tKc5where_tKF"></a>
-                    <a name="//apple_ref/swift/Method/count(where:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s10DictionaryV12SwifterSwiftE5countSiSbx3key_q_5valuet_tKc5where_tKF">count(where:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>SwifterSwift: Count dictionary entries that where function returns true.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">count</span><span class="p">(</span><span class="k">where</span> <span class="nv">condition</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">((</span><span class="nv">key</span><span class="p">:</span> <span class="kt">Key</span><span class="p">,</span> <span class="nv">value</span><span class="p">:</span> <span class="kt">Value</span><span class="p">))</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">rethrows</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>where</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>condition to evaluate each tuple entry against.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>Count of entries that matches the where clousure.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
               </ul>
             </div>
             <div class="task-group">
@@ -609,9 +574,9 @@ returns the following string:
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s10DictionaryV12SwifterSwifts26ExpressibleByStringLiteralRzrlE16lowercaseAllKeysyyF"></a>
+                    <a name="/s:s10DictionaryV12SwifterSwifts14StringProtocolRzrlE16lowercaseAllKeysyyF"></a>
                     <a name="//apple_ref/swift/Method/lowercaseAllKeys()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s10DictionaryV12SwifterSwifts26ExpressibleByStringLiteralRzrlE16lowercaseAllKeysyyF">lowercaseAllKeys()</a>
+                    <a class="token" href="#/s:s10DictionaryV12SwifterSwifts14StringProtocolRzrlE16lowercaseAllKeysyyF">lowercaseAllKeys()</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -667,7 +632,7 @@ returns the following string:
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">+</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span><span class="p">:</span> <span class="kt">Value</span><span class="p">],</span> <span class="nv">rhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span><span class="p">:</span> <span class="kt">Value</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Key</span><span class="p">:</span> <span class="kt">Value</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">+</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">],</span> <span class="nv">rhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -746,7 +711,7 @@ returns the following string:
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">+=</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">inout</span> <span class="p">[</span><span class="kt">Key</span><span class="p">:</span> <span class="kt">Value</span><span class="p">],</span> <span class="nv">rhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span><span class="p">:</span> <span class="kt">Value</span><span class="p">])</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">+=</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">inout</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">],</span> <span class="nv">rhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">])</span></code></pre>
 
                         </div>
                       </div>
@@ -787,9 +752,9 @@ returns the following string:
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s10DictionaryV12SwifterSwiftE1soiAByxq_GAE_SayxGtFZ"></a>
+                    <a name="/s:s10DictionaryV12SwifterSwiftE1soiAByxq_GAE_qd__t7ElementQyd__Rszs8SequenceRd__lFZ"></a>
                     <a name="//apple_ref/swift/Method/-(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s10DictionaryV12SwifterSwiftE1soiAByxq_GAE_SayxGtFZ">-(_:_:)</a>
+                    <a class="token" href="#/s:s10DictionaryV12SwifterSwiftE1soiAByxq_GAE_qd__t7ElementQyd__Rszs8SequenceRd__lFZ">-(_:_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -797,7 +762,7 @@ returns the following string:
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>SwifterSwift: Remove contained in the array from the dictionary</p>
+                        <p>SwifterSwift: Remove keys contained in the sequence from the dictionary</p>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">dict</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">"key1"</span> <span class="p">:</span> <span class="s">"value1"</span><span class="p">,</span> <span class="s">"key2"</span> <span class="p">:</span> <span class="s">"value2"</span><span class="p">,</span> <span class="s">"key3"</span> <span class="p">:</span> <span class="s">"value3"</span><span class="p">]</span>
 <span class="k">let</span> <span class="nv">result</span> <span class="o">=</span> <span class="n">dict</span><span class="o">-</span><span class="p">[</span><span class="s">"key1"</span><span class="p">,</span> <span class="s">"key2"</span><span class="p">]</span>
 <span class="n">result</span><span class="o">.</span><span class="n">keys</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="s">"key3"</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">true</span>
@@ -810,7 +775,7 @@ returns the following string:
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">-</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span><span class="p">:</span> <span class="kt">Value</span><span class="p">],</span> <span class="nv">keys</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Key</span><span class="p">:</span> <span class="kt">Value</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">-</span> <span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">],</span> <span class="nv">keys</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">]</span> <span class="k">where</span> <span class="kt">Key</span> <span class="o">==</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">S</span> <span class="p">:</span> <span class="kt">Sequence</span></code></pre>
 
                         </div>
                       </div>
@@ -855,9 +820,9 @@ returns the following string:
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s10DictionaryV12SwifterSwiftE2seoiyAByxq_Gz_SayxGtFZ"></a>
+                    <a name="/s:s10DictionaryV12SwifterSwiftE2seoiyAByxq_Gz_qd__t7ElementQyd__Rszs8SequenceRd__lFZ"></a>
                     <a name="//apple_ref/swift/Method/-=(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s10DictionaryV12SwifterSwiftE2seoiyAByxq_Gz_SayxGtFZ">-=(_:_:)</a>
+                    <a class="token" href="#/s:s10DictionaryV12SwifterSwiftE2seoiyAByxq_Gz_qd__t7ElementQyd__Rszs8SequenceRd__lFZ">-=(_:_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -865,7 +830,7 @@ returns the following string:
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>SwifterSwift: Remove contained in the array from the dictionary</p>
+                        <p>SwifterSwift: Remove keys contained in the sequence from the dictionary</p>
 <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">dict</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="s">"key1"</span> <span class="p">:</span> <span class="s">"value1"</span><span class="p">,</span> <span class="s">"key2"</span> <span class="p">:</span> <span class="s">"value2"</span><span class="p">,</span> <span class="s">"key3"</span> <span class="p">:</span> <span class="s">"value3"</span><span class="p">]</span>
 <span class="n">dict</span><span class="o">-=</span><span class="p">[</span><span class="s">"key1"</span><span class="p">,</span> <span class="s">"key2"</span><span class="p">]</span>
 <span class="n">dict</span><span class="o">.</span><span class="n">keys</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="s">"key3"</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">true</span>
@@ -878,7 +843,7 @@ returns the following string:
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">-=</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">inout</span> <span class="p">[</span><span class="kt">Key</span><span class="p">:</span> <span class="kt">Value</span><span class="p">],</span> <span class="nv">keys</span><span class="p">:</span> <span class="p">[</span><span class="kt">Key</span><span class="p">])</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">-=</span> <span class="o">&lt;</span><span class="kt">S</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="k">inout</span> <span class="p">[</span><span class="kt">Key</span> <span class="p">:</span> <span class="kt">Value</span><span class="p">],</span> <span class="nv">keys</span><span class="p">:</span> <span class="kt">S</span><span class="p">)</span> <span class="k">where</span> <span class="kt">Key</span> <span class="o">==</span> <span class="kt">S</span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">S</span> <span class="p">:</span> <span class="kt">Sequence</span></code></pre>
 
                         </div>
                       </div>
@@ -924,8 +889,8 @@ returns the following string:
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="external">Omar Albeik</a>. All rights reserved. (Last updated: 2018-04-10)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="external">Omar Albeik</a>. All rights reserved. (Last updated: 2018-06-14)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -107,6 +107,9 @@
                 <a class="nav-group-task-link" href="../Extensions/Color/FlatUI.html">– FlatUI</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Comparable.html">Comparable</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Data.html">Data</a>
               </li>
               <li class="nav-group-task">
@@ -152,6 +155,9 @@
                 <a class="nav-group-task-link" href="../Extensions/Optional.html">Optional</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/SKNode.html">SKNode</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/Sequence.html">Sequence</a>
               </li>
               <li class="nav-group-task">
@@ -185,6 +191,9 @@
                 <a class="nav-group-task-link" href="../Extensions/UIFont.html">UIFont</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIGestureRecognizer.html">UIGestureRecognizer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UIImage.html">UIImage</a>
               </li>
               <li class="nav-group-task">
@@ -201,6 +210,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UINavigationItem.html">UINavigationItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIScrollView.html">UIScrollView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UISearchBar.html">UISearchBar</a>
@@ -240,6 +252,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UIViewController.html">UIViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIWindow.html">UIWindow</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/URL.html">URL</a>
@@ -397,11 +412,11 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>SwifterSwift: Gets the wrapped value of an optional. If the optional is <code>nil</code>, throw a custom error.</p>
-<pre class="highlight swift"><code>      <span class="k">let</span> <span class="nv">foo</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
-      <span class="k">try</span> <span class="nf">print</span><span class="p">(</span><span class="n">foo</span><span class="o">.</span><span class="nf">unwrapped</span><span class="p">(</span><span class="nv">or</span><span class="p">:</span> <span class="kt">MyError</span><span class="o">.</span><span class="n">notFound</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">MyError</span><span class="o">.</span><span class="n">notFound</span>
+<pre class="highlight swift"><code>   <span class="k">let</span> <span class="nv">foo</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+   <span class="k">try</span> <span class="nf">print</span><span class="p">(</span><span class="n">foo</span><span class="o">.</span><span class="nf">unwrapped</span><span class="p">(</span><span class="nv">or</span><span class="p">:</span> <span class="kt">MyError</span><span class="o">.</span><span class="n">notFound</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">MyError</span><span class="o">.</span><span class="n">notFound</span>
 
-      <span class="k">let</span> <span class="nv">bar</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="s">"bar"</span>
-      <span class="k">try</span> <span class="nf">print</span><span class="p">(</span><span class="n">bar</span><span class="o">.</span><span class="nf">unwrapped</span><span class="p">(</span><span class="nv">or</span><span class="p">:</span> <span class="kt">MyError</span><span class="o">.</span><span class="n">notFound</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="s">"bar"</span>
+   <span class="k">let</span> <span class="nv">bar</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="o">=</span> <span class="s">"bar"</span>
+   <span class="k">try</span> <span class="nf">print</span><span class="p">(</span><span class="n">bar</span><span class="o">.</span><span class="nf">unwrapped</span><span class="p">(</span><span class="nv">or</span><span class="p">:</span> <span class="kt">MyError</span><span class="o">.</span><span class="n">notFound</span><span class="p">))</span> <span class="o">-&gt;</span> <span class="s">"bar"</span>
 </code></pre>
 <div class="aside aside-throws">
     <p class="aside-title">Throws</p>
@@ -566,14 +581,45 @@
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sq12SwifterSwifts10CollectionRzlE12isNilOrEmptySbvp"></a>
+                    <a name="//apple_ref/swift/Property/isNilOrEmpty" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sq12SwifterSwifts10CollectionRzlE12isNilOrEmptySbvp">isNilOrEmpty</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check if optional is nil or empty collection.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">isNilOrEmpty</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="external">Omar Albeik</a>. All rights reserved. (Last updated: 2018-04-10)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="external">Omar Albeik</a>. All rights reserved. (Last updated: 2018-06-14)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

@@ -106,6 +106,9 @@
                 <a class="nav-group-task-link" href="Extensions/Color/FlatUI.html">– FlatUI</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/Comparable.html">Comparable</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/Data.html">Data</a>
               </li>
               <li class="nav-group-task">
@@ -151,6 +154,9 @@
                 <a class="nav-group-task-link" href="Extensions/Optional.html">Optional</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/SKNode.html">SKNode</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/Sequence.html">Sequence</a>
               </li>
               <li class="nav-group-task">
@@ -184,6 +190,9 @@
                 <a class="nav-group-task-link" href="Extensions/UIFont.html">UIFont</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/UIGestureRecognizer.html">UIGestureRecognizer</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/UIImage.html">UIImage</a>
               </li>
               <li class="nav-group-task">
@@ -200,6 +209,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/UINavigationItem.html">UINavigationItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/UIScrollView.html">UIScrollView</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/UISearchBar.html">UISearchBar</a>
@@ -239,6 +251,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/UIViewController.html">UIViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/UIWindow.html">UIWindow</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/URL.html">URL</a>
@@ -362,11 +377,17 @@
 <h4>- Integrate AppKit extensions only:</h4>
 <pre><code class="ruby language-ruby">pod 'SwifterSwift/AppKit'</code></pre>
 
+<h4>- Integrate MapKit extensions only:</h4>
+<pre><code class="ruby language-ruby">pod 'SwifterSwift/MapKit'</code></pre>
+
 <h4>- Integrate CoreGraphics extensions only:</h4>
 <pre><code class="ruby language-ruby">pod 'SwifterSwift/CoreGraphics'</code></pre>
 
 <h4>- Integrate CoreLocation extensions only:</h4>
 <pre><code class="ruby language-ruby">pod 'SwifterSwift/CoreLocation'</code></pre>
+
+<h4>- Integrate SpriteKit extensions only:</h4>
+<pre><code class="ruby language-ruby">pod 'SwifterSwift/SpriteKit'</code></pre>
 </details>
 
 <details>
@@ -389,7 +410,7 @@ let package = Package(
     name: "YOUR_PROJECT_NAME",
     targets: [],
     dependencies: [
-        .Package(url: "https://github.com/SwifterSwift/SwifterSwift.git", majorVersion: 4),
+        .package(url: "https://github.com/SwifterSwift/SwifterSwift.git", from: "4.0.0")
     ]
 )
 </code></pre>
@@ -472,6 +493,7 @@ let package = Package(
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/Extensions/UIKit/UITextViewExtensions.swift"><code>UITextView extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/Extensions/UIKit/UIViewControllerExtensions.swift"><code>UIViewController extensions</code></a></li>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/Extensions/UIKit/UIViewExtensions.swift"><code>UIView extensions</code></a></li>
+<li><a href="https://github.com/SwifterSwift/SwifterSwift/tree/master/Sources/Extensions/UIKit/UIWindowExtensions.swift"><code>UIWindow extensions</code></a></li>
 </ul>
 </details>
 
@@ -509,6 +531,14 @@ let package = Package(
 </br>
 <ul>
 <li><a href="https://github.com/SwifterSwift/SwifterSwift/blob/master/Sources/Extensions/MapKit/MKPolylineExtensions.swift"><code>MKPolylineExtensions</code></a></li>
+</ul>
+</details>
+
+<details>
+<summary>SpriteKit Extensions</summary>
+</br>
+<ul>
+<li><a href="https://github.com/SwifterSwift/SwifterSwift/blob/master/Sources/Extensions/SpriteKit/SKNodeExtensions.swift"><code>SKNodeExtensions</code></a></li>
 </ul>
 </details>
 
@@ -556,8 +586,8 @@ Please refer to <a href="https://github.com/SwifterSwift/SwifterSwift/tree/maste
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="external">Omar Albeik</a>. All rights reserved. (Last updated: 2018-04-10)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="external">Omar Albeik</a>. All rights reserved. (Last updated: 2018-06-14)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
