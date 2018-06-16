@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           SwifterSwift Docs
         </a>
-         (96% documented)
+         (100% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -186,6 +186,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UIDatePicker.html">UIDatePicker</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIEdgeInsets.html">UIEdgeInsets</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UIFont.html">UIFont</a>
@@ -465,7 +468,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>SwifterSwift: Keep elements of Array while condition is true.</p>
+<pre class="highlight swift"><code><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">]</span><span class="o">.</span><span class="nf">keep</span><span class="p">(</span> <span class="nv">where</span><span class="p">:</span> <span class="p">{</span><span class="nv">$0</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">})</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</code></pre>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    provided condition exception.
+
+</div>
 
                       </div>
                       <div class="declaration">
@@ -476,6 +486,29 @@
 <span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">keep</span><span class="p">(</span><span class="k">while</span> <span class="nv">condition</span><span class="p">:</span> <span class="p">(</span><span class="kt">Element</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">rethrows</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>condition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>condition to evaluate each element against.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self after applying provided condition.</p>
                       </div>
                     </section>
                   </div>
@@ -683,7 +716,11 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>SwifterSwift: Rotate the array by the given places.</p>
+<pre class="highlight swift"><code><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="nf">rotate</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="nf">rotate</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span> <span class="mi">3</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="nf">rotated</span><span class="p">(</span><span class="nv">by</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -694,6 +731,29 @@
 <span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">rotate</span><span class="p">(</span><span class="n">by</span> <span class="nv">places</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>places</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The number of places that the array should be rotated. If the value is positive the end becomes the start, if it negative it&rsquo;s that start become the end.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self after rotating.</p>
                       </div>
                     </section>
                   </div>
@@ -711,7 +771,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>SwifterSwift: Shuffle array. (Using Fisher-Yates Algorithm)</p>
+<pre class="highlight swift"><code><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span><span class="o">.</span><span class="nf">shuffle</span><span class="p">()</span> <span class="c1">// shuffles array</span>
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -722,6 +784,10 @@
 <span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">shuffle</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self after shuffling.</p>
                       </div>
                     </section>
                   </div>
@@ -896,7 +962,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>SwifterSwift: Sort the array based on an optional keypath.</p>
 
                       </div>
                       <div class="declaration">
@@ -907,6 +973,41 @@
 <span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="n">sort</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Comparable</span><span class="o">&gt;</span><span class="p">(</span><span class="n">by</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">T</span><span class="p">?</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">ascending</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Key path to sort, must be Comparable.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ascending</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>whether order is ascending or not.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self after sorting.</p>
                       </div>
                     </section>
                   </div>
@@ -924,7 +1025,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>SwifterSwift: Sort the array based on a keypath.</p>
 
                       </div>
                       <div class="declaration">
@@ -935,6 +1036,95 @@
 <span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="n">sort</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">:</span> <span class="kt">Comparable</span><span class="o">&gt;</span><span class="p">(</span><span class="n">by</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="nv">ascending</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Key path to sort, must be Comparable.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>ascending</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>whether order is ascending or not.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self after sorting.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sa12SwifterSwiftE11removeFirstxSgSbxKc5where_tKF"></a>
+                    <a name="//apple_ref/swift/Method/removeFirst(where:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sa12SwifterSwiftE11removeFirstxSgSbxKc5where_tKF">removeFirst(where:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwifterSwift: Removes the first element of the collection which satisfies the given predicate.</p>
+<pre class="highlight swift"><code>   <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span><span class="o">.</span><span class="n">removeFirst</span> <span class="p">{</span> <span class="nv">$0</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">}</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+   <span class="p">[</span><span class="s">"h"</span><span class="p">,</span> <span class="s">"e"</span><span class="p">,</span> <span class="s">"l"</span><span class="p">,</span> <span class="s">"l"</span><span class="p">,</span> <span class="s">"o"</span><span class="p">]</span><span class="o">.</span><span class="n">removeFirst</span> <span class="p">{</span> <span class="nv">$0</span> <span class="o">==</span> <span class="s">"e"</span> <span class="p">}</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="s">"h"</span><span class="p">,</span> <span class="s">"l"</span><span class="p">,</span> <span class="s">"l"</span><span class="p">,</span> <span class="s">"o"</span><span class="p">]</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@discardableResult</span>
+<span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">removeFirst</span><span class="p">(</span><span class="k">where</span> <span class="nv">predicate</span><span class="p">:</span> <span class="p">(</span><span class="kt">Element</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">rethrows</span> <span class="o">-&gt;</span> <span class="kt">Element</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>predicate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that takes an element as its argument and returns a Boolean value that indicates whether the passed element represents a match.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The first element for which predicate returns true, after removing it. If no elements in the collection satisfy the given predicate, returns <code>nil</code>.</p>
                       </div>
                     </section>
                   </div>
@@ -1010,7 +1200,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>SwifterSwift: Remove all instances of an item from array.</p>
+<pre class="highlight swift"><code><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span><span class="o">.</span><span class="nf">removeAll</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="p">[</span><span class="s">"h"</span><span class="p">,</span> <span class="s">"e"</span><span class="p">,</span> <span class="s">"l"</span><span class="p">,</span> <span class="s">"l"</span><span class="p">,</span> <span class="s">"o"</span><span class="p">]</span><span class="o">.</span><span class="nf">removeAll</span><span class="p">(</span><span class="s">"l"</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="s">"h"</span><span class="p">,</span> <span class="s">"e"</span><span class="p">,</span> <span class="s">"o"</span><span class="p">]</span>
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -1021,6 +1214,29 @@
 <span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">removeAll</span><span class="p">(</span><span class="n">_</span> <span class="nv">item</span><span class="p">:</span> <span class="kt">Element</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>item</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>item to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self after removing all instances of item.</p>
                       </div>
                     </section>
                   </div>
@@ -1038,7 +1254,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Undocumented</p>
+                        <p>SwifterSwift: Remove all instances contained in items parameter from array.</p>
+<pre class="highlight swift"><code><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span><span class="o">.</span><span class="nf">removeAll</span><span class="p">([</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="p">[</span><span class="s">"h"</span><span class="p">,</span> <span class="s">"e"</span><span class="p">,</span> <span class="s">"l"</span><span class="p">,</span> <span class="s">"l"</span><span class="p">,</span> <span class="s">"o"</span><span class="p">]</span><span class="o">.</span><span class="nf">removeAll</span><span class="p">([</span><span class="s">"l"</span><span class="p">,</span> <span class="s">"h"</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="s">"e"</span><span class="p">,</span> <span class="s">"o"</span><span class="p">]</span>
+</code></pre>
 
                       </div>
                       <div class="declaration">
@@ -1049,6 +1268,29 @@
 <span class="kd">public</span> <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">removeAll</span><span class="p">(</span><span class="n">_</span> <span class="nv">items</span><span class="p">:</span> <span class="p">[</span><span class="kt">Element</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>items</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>items to remove.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>self after removing all instances of all items in given array.</p>
                       </div>
                     </section>
                   </div>
@@ -1459,7 +1701,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="external">Omar Albeik</a>. All rights reserved. (Last updated: 2018-06-14)</p>
+      <p>&copy; 2018 <a class="link" href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="external">Omar Albeik</a>. All rights reserved. (Last updated: 2018-06-16)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
