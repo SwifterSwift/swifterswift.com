@@ -100,7 +100,7 @@
 							<a href="https://cocoapods.org/pods/SwifterSwift" target="_blank"><img src="https://img.shields.io/cocoapods/dm/SwifterSwift.svg" alt="CocoaPods monthly downloads" /></a>
 							<a href="https://github.com/SwifterSwift/swifterSwift" target="_blank"><img src="https://img.shields.io/cocoapods/p/SwifterSwift.svg?style=flat" alt="Platforms" /></a>
 							<a href="https://swift.org" target="_blank"><img src="https://img.shields.io/badge/Swift-4.1-orange.svg" alt="Swift" /></a>
-							<a href="https://developer.apple.com/xcode" target="_blank"><img src="https://img.shields.io/badge/Xcode-9.3-blue.svg" alt="Xcode" /></a>
+							<a href="https://developer.apple.com/xcode" target="_blank"><img src="https://img.shields.io/badge/Xcode-9.4-blue.svg" alt="Xcode" /></a>
 							<a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-red.svg" alt="MIT License" /></a>
 							<a href="https://slackin-ppvrggbpgn.now.sh/" target="_blank"><img src="https://slackin-ppvrggbpgn.now.sh/badge.svg" alt="Slack Channel" /></a>
 						</div>
@@ -153,10 +153,15 @@ use_frameworks!
 
 target '<Your Target Name>' do
 	# Please keep one line from the following lines:
-	pod 'SwifterSwift'            # All Extensions
-	pod 'SwifterSwift/Foundation' # Foundation Extensions
-	pod 'SwifterSwift/UIKit'      # UIKit Extensions
-	pod 'SwifterSwift/Cocoa'      # Cocoa Extensions
+	pod 'SwifterSwift'               # All Extensions
+	pod 'SwifterSwift/SwiftStdlib'   # Standard Library Extensions
+	pod 'SwifterSwift/Foundation'    # Foundation Extensions
+	pod 'SwifterSwift/UIKit'         # UIKit Extensions
+	pod 'SwifterSwift/Cocoa'         # Cocoa Extensions
+	pod 'SwifterSwift/MapKit'        # MapKit Extensions
+	pod 'SwifterSwift/CoreGraphics'  # CoreGraphics Extensions
+	pod 'SwifterSwift/CoreLocation'  # CoreLocation Extensions
+	pod 'SwifterSwift/SpriteKit'	 # SpriteKit Extensions
 end</code></pre>
 							<p>Then, run the following command:</p>
 							<pre class="language-bash"><code>$ pod install</code></pre>
@@ -413,7 +418,7 @@ let package = Package(
 						</ul>
 					</div>
 					<div class="col-xs-12 copy text-center">
-						<p>Copyright &copy; 2017 <strong>SwifterSwift</strong> - All rights reserved.<br> Webpage designed by <a href="https://github.com/lionbytes" class="designer" target="_blank"><img src="images/lionbytes.png" alt="Lionbytes" title="Lionbytes"></a><br><br></p>
+						<p>Copyright &copy; 2018 <strong>SwifterSwift</strong> - All rights reserved.<br> Webpage designed by <a href="https://github.com/lionbytes" class="designer" target="_blank"><img src="images/lionbytes.png" alt="Lionbytes" title="Lionbytes"></a><br><br></p>
 					</div>
 				</div>
 			</footer>
