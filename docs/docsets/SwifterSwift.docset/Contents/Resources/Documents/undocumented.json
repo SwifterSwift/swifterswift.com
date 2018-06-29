@@ -1,12 +1,6 @@
 {
   "warnings": [
-    {
-      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift/Sources/Extensions/SwiftStdlib/SignedIntegerExtensions.swift",
-      "line": 88,
-      "symbol": "SignedInteger.ordinalString(locale:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    }
+
   ],
   "source_directory": "/Users/omar/Desktop/Opensource/SwifterSwift/SwifterSwift"
 }
