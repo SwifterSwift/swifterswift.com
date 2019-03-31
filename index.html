@@ -13,8 +13,8 @@
 			window.location.protocol = "https";
 	</script>
 
-	<meta content="SwifterSwift a Swift 3 library of a native collection of extensions and performance improvements for iOS, macOS, tvOS, watchOS." name="description" />
-	<meta content="SwifterSwift is a collection of over 500 native Swift 3 extensions, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes – over 500 in 1 – for iOS, macOS, tvOS and watchOS."
+	<meta content="SwifterSwift a Swift library of a native collection of extensions and performance improvements for iOS, macOS, tvOS, watchOS." name="description" />
+	<meta content="SwifterSwift is a collection of over 500 native Swift extensions, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes – over 500 in 1 – for iOS, macOS, tvOS and watchOS."
 	  name="keyword" />
 	<meta name="author" content="Lionbytes">
 
@@ -92,15 +92,14 @@
 					<div class="col-xs-12">
 						<div class="badge-list">
 							<a href="https://travis-ci.org/SwifterSwift/SwifterSwift" target="_blank"><img src="https://api.travis-ci.org/SwifterSwift/SwifterSwift.svg?branch=master" alt="Build Status" /></a>
+							<a href="https://github.com/SwifterSwift/swifterSwift" target="_blank"><img src="https://img.shields.io/badge/platforms-iOS%20%7C%20tvOS%20%7C%20macOS%20%7C%20watchOS%20%7C%20Linux-lightgrey.svg" alt="Platforms" /></a>
 							<a href="https://cocoapods.org/pods/SwifterSwift" target="_blank"><img src="https://img.shields.io/cocoapods/v/SwifterSwift.svg" alt="Cocoapods" /></a>
 							<a href="https://github.com/Carthage/Carthage" target="_blank"><img src="https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat" alt="Carthage compatible" /></a>
+							<a href="https://swift.org/package-manager/" target="_blank"><img src="https://img.shields.io/badge/SPM-Compatible-orange.svg?style=flat" alt="SPM compatible" /></a>
 							<a href="https://codecov.io/gh/SwifterSwift/SwifterSwift" target="_blank"><img src="https://codecov.io/gh/SwifterSwift/SwifterSwift/branch/master/graph/badge.svg" alt="codecov" /></a>
 							<a href="http://swifterswift.com/docs" target="_blank"><img src="http://swifterswift.com/docs/badge.svg" alt="documentation" /></a>
-							<a href="https://cocoapods.org/pods/SwifterSwift" target="_blank"><img src="https://img.shields.io/cocoapods/dt/SwifterSwift.svg" alt="CocoaPods total downloads" /></a>
-							<a href="https://cocoapods.org/pods/SwifterSwift" target="_blank"><img src="https://img.shields.io/cocoapods/dm/SwifterSwift.svg" alt="CocoaPods monthly downloads" /></a>
-							<a href="https://github.com/SwifterSwift/swifterSwift" target="_blank"><img src="https://img.shields.io/cocoapods/p/SwifterSwift.svg?style=flat" alt="Platforms" /></a>
-							<a href="https://swift.org" target="_blank"><img src="https://img.shields.io/badge/Swift-4.1-orange.svg" alt="Swift" /></a>
-							<a href="https://developer.apple.com/xcode" target="_blank"><img src="https://img.shields.io/badge/Xcode-9.4-blue.svg" alt="Xcode" /></a>
+							<a href="https://swift.org" target="_blank"><img src="https://img.shields.io/badge/Swift-5.0-orange.svg" alt="Swift" /></a>
+							<a href="https://developer.apple.com/xcode" target="_blank"><img src="https://img.shields.io/badge/Xcode-10.2-blue.svg" alt="Xcode" /></a>
 							<a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-red.svg" alt="MIT License" /></a>
 							<a href="https://slackin-ppvrggbpgn.now.sh/" target="_blank"><img src="https://slackin-ppvrggbpgn.now.sh/badge.svg" alt="Slack Channel" /></a>
 						</div>
@@ -116,7 +115,7 @@
 				<h1>What is <em class="text-danger"><strong>Swifter</strong>Swift</em> ?</h1>
 				<p>
 					<em>
-						<strong>Swifter</strong>Swift</em> is a collection of over 500 native Swift 4 extensions, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes –over 500 in 1– for iOS,
+						<strong>Swifter</strong>Swift</em> is a collection of over 500 native Swift extensions, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes –over 500 in 1– for iOS,
 					macOS, tvOS and watchOS.
 				</p>
 				<br>
@@ -162,6 +161,7 @@ target '<Your Target Name>' do
 	pod 'SwifterSwift/CoreGraphics'  # CoreGraphics Extensions
 	pod 'SwifterSwift/CoreLocation'  # CoreLocation Extensions
 	pod 'SwifterSwift/SpriteKit'	 # SpriteKit Extensions
+	pod 'SwifterSwift/Dispatch'	     # Dispatch Extensions
 end</code></pre>
 							<p>Then, run the following command:</p>
 							<pre class="language-bash"><code>$ pod install</code></pre>
@@ -174,7 +174,7 @@ end</code></pre>
 $ brew install carthage</code></pre>
 
 							<p>To integrate SwifterSwift into your Xcode project using Carthage, specify it in your Cartfile:</p>
-							<pre class="language-bash"><code>github "SwifterSwift/SwifterSwift" ~> 4.0</code></pre>
+							<pre class="language-bash"><code>github "SwifterSwift/SwifterSwift" ~> 5.0</code></pre>
 
 							<p>Run</p>
 							<pre class="language-bash"><code>carthage update</code></pre>
@@ -189,11 +189,9 @@ let package = Package(
     name: "YOUR_PROJECT_NAME",
     targets: [],
     dependencies: [
-        .Package(url: "https://github.com/SwifterSwift/SwifterSwift.git", majorVersion: 4),
+		.package(url: "https://github.com/SwifterSwift/SwifterSwift.git", from: "5.0.0"),
     ]
 )</code></pre>
-<p>Note that the <span><a target="_blank" href="Swift Package Manager">Swift Package Manager</a></span> is still in early design and development, for more information checkout its <span><a target="_blank" href="https://github.com/apple/swift-package-manager">GitHub Page</a></span></p>
-
 						</div>
 						<div role="tabpanel" class="tab-pane fade text-center" id="SourceFiles">
 							<br><br>
@@ -277,120 +275,6 @@ let package = Package(
 				<!--/row-->
 			</div>
 		</div>
-		<!-- END: Support -->
-
-		<!-- START: Store -->
-		<div id="store" class="container-wrap">
-			<section id="windows" class="container">
-				<h2>Store <span class="fa fa-shopping-cart text-danger"></span></h2>
-				<p>Also, you can support the project by purchasing <em class="text-danger"><strong>Swifter</strong>Swift</em> merch. Elegantly designed Regular Tees, American Apparel Tees, Sweatshirts, Classic Long Sleeve Tees, Unisex Tank Tops, Hoodies, Mugs, Posters,
-					Mobile Cases, etc. Regular fit and relaxed fit for both gentlemen and ladies.</p>
-				<p><strong>Note: </strong>each print has its own mug, mobile case and poster designs.<br>&nbsp;</p>
-				<div class="row">
-
-					<div class="col-sm-4">
-						<div class="thumbnail"> <img src="images/tee-swifter-colored-art-front-back.jpg" alt="Tee Thumb">
-							<div class="caption">
-								<h2 id="thumbnail-label3"><a href="https://teechip.com/swifter-colored-art-front-back#id=4&c=F6F6F6&sid=gildan-50-50-hoodie&s=front" target="_blank">SwifterSwift - Colored Art / Front-Back</a></h2>
-								<div class="price"><span>$23.00</span> - <span>$32.00</span></div>
-								<footer class="window-buttons">
-									<a href="https://teechip.com/swifter-colored-art-front-back#id=4&c=F6F6F6&sid=gildan-50-50-hoodie&s=front" class="btn btn-info" role="button" target="_blank">Buy <span class="fa fa-shopping-cart"></span></a>
-								</footer>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-4">
-						<div class="thumbnail"> <img src="images/tee-swifter-colored-art-darktee.jpg" alt="Tee Thumb">
-							<div class="caption">
-								<h2 id="thumbnail-label3"><a href="https://teechip.com/swifter-colored-art-darktee#id=1&c=282828&sid=american-apparel-t-shirt&s=front" target="_blank">SwifterSwift - Colored Art / Dark Tee</a></h2>
-								<div class="price"><span>$13.00</span> - <span>$16.00</span></div>
-								<footer class="window-buttons">
-									<a href="https://teechip.com/swifter-colored-art-darktee#id=1&c=282828&sid=american-apparel-t-shirt&s=front" class="btn btn-info" role="button" target="_blank">Buy <span class="fa fa-shopping-cart"></span></a>
-								</footer>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-4">
-						<div class="thumbnail"> <img src="images/tee-swifter-white-art-fire-colors.jpg" alt="Tee Thumb">
-							<div class="caption">
-								<h2 id="thumbnail-label3"><a href="https://teechip.com/swifter-white-art-fire-colors#id=0&c=F20202&sid=fruit-of-the-loom-cotton-t&s=front" target="_blank">SwifterSwift - White Art / Fire Colors</a></h2>
-								<div class="price"><span>$13.00</span> - <span>$17.00</span></div>
-								<footer class="window-buttons">
-									<a href="https://teechip.com/swifter-white-art-fire-colors#id=0&c=F20202&sid=fruit-of-the-loom-cotton-t&s=front" class="btn btn-info" role="button" target="_blank">Buy <span class="fa fa-shopping-cart"></span></a>
-								</footer>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-4">
-						<div class="thumbnail"> <img src="images/tee-swifter-white-art-front-back.jpg" alt="Tee Thumb">
-							<div class="caption">
-								<h2 id="thumbnail-label3"><a href="https://teechip.com/swifter-white-art-front-back#id=2&c=F05438&sid=american-apparel-girly-t&s=front" target="_blank">SwifterSwift - White Art / Front-Back</a></h2>
-								<div class="price"><span>$27.00</span></div>
-								<footer class="window-buttons">
-									<a href="https://teechip.com/swifter-white-art-front-back#id=2&c=F05438&sid=american-apparel-girly-t&s=front" class="btn btn-info" role="button" target="_blank">Buy <span class="fa fa-shopping-cart"></span></a>
-								</footer>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-4">
-						<div class="thumbnail"> <img src="images/tee-swifter-colored-art-white.jpg" alt="Tee Thumb">
-							<div class="caption">
-								<h2 id="thumbnail-label3"><a href="https://teechip.com/swifter-colored-art-white#id=1&c=F6F6F6&sid=american-apparel-t-shirt&s=front" target="_blank">SwifterSwift - Colored Art / White Tee</a></h2>
-								<div class="price"><span>$20.00</span></div>
-								<footer class="window-buttons">
-									<a href="https://teechip.com/swifter-colored-art-white#id=1&c=F6F6F6&sid=american-apparel-t-shirt&s=front" class="btn btn-info" role="button" target="_blank">Buy <span class="fa fa-shopping-cart"></span></a>
-								</footer>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-4">
-						<div class="thumbnail"> <img src="images/tee-swifter-colored-block-art-white.jpg" alt="Tee Thumb">
-							<div class="caption">
-								<h2 id="thumbnail-label3"><a href="https://teechip.com/swifter-colored-block-art-white#id=16&c=F6F6F6&sid=fruit-of-the-loom-long-sleeve&s=front" target="_blank">SwifterSwift - Colored Block Art / White Tee</a></h2>
-								<div class="price"><span>$20.00</span></div>
-								<footer class="window-buttons">
-									<a href="https://teechip.com/swifter-colored-block-art-white#id=16&c=F6F6F6&sid=fruit-of-the-loom-long-sleeve&s=front" class="btn btn-info" role="button" target="_blank">Buy <span class="fa fa-shopping-cart"></span></a>
-								</footer>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-4">
-						<div class="thumbnail"> <img src="images/tee-swifter-colored-block-art-darktee.jpg" alt="Tee Thumb">
-							<div class="caption">
-								<h2 id="thumbnail-label3"><a href="https://teechip.com/swifter-colored-block-art-darktee#id=1&c=1E2949&sid=american-apparel-t-shirt&s=front" target="_blank">SwifterSwift - Colored Block Art / Dark Tee</a></h2>
-								<div class="price"><span>$13.00</span> - <span>$16.00</span></div>
-								<footer class="window-buttons">
-									<a href="https://teechip.com/swifter-colored-block-art-darktee#id=1&c=1E2949&sid=american-apparel-t-shirt&s=front" class="btn btn-info" role="button" target="_blank">Buy <span class="fa fa-shopping-cart"></span></a>
-								</footer>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-sm-4">
-						<div class="thumbnail"> <img src="images/tee-swifter-white-block-art-fire-colors.jpg" alt="Tee Thumb">
-							<div class="caption">
-								<h2 id="thumbnail-label3"><a href="https://teechip.com/swifter-white-block-art-fire-colors#id=0&c=FF6600&sid=fruit-of-the-loom-cotton-t&s=front" target="_blank">SwifterSwift - White Block Art / Fire Colors</a></h2>
-								<div class="price"><span>$13.00</span> - <span>$17.00</span></div>
-								<footer class="window-buttons">
-									<a href="https://teechip.com/swifter-white-block-art-fire-colors#id=0&c=FF6600&sid=fruit-of-the-loom-cotton-t&s=front" class="btn btn-info" role="button" target="_blank">Buy <span class="fa fa-shopping-cart"></span></a>
-								</footer>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<footer>
-					<p class="text-center"><br><a class="btn btn-default" href="https://teechip.com/stores/swifterswift" target="_blank" role="button">View Online Store »</a></p>
-				</footer>
-			</section>
-		</div>
-		<!-- END: Store -->
 
 		<!-- START: Footer -->
 		<div class="container-wrap-dark">
@@ -401,18 +285,14 @@ let package = Package(
 						<ul id="social-icons" class="list-unstyled inline-list text-center">
 
 							<!-- Twitter -->
-							<li><a rel="nofollow" href="https://twitter.com/intent/tweet?url=https://swifterswift.com&text=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS&oq=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS"
+							<li><a rel="nofollow" href="https://twitter.com/intent/tweet?url=https://swifterswift.com&text=SwifterSwift is a collection of native Swift extensions for iOS, macOS, tvOS and watchOS&oq=SwifterSwift is a collection of native Swift extensions for iOS, macOS, tvOS and watchOS"
 								  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on Twitter"><span class="fa fa-twitter"></span></a></li>
-
-							<!-- Google Plus -->
-							<li><a rel="nofollow" href="https://plus.google.com/share?url=https://swifterswift.com&text=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS&oq=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS"
-								  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on Google Plus"><span class="fa fa-google-plus"></span></a></li>
 
 							<!-- Facebook -->
 							<li><a rel="nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https://swifterswift.com" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on Facebook"><span class="fa fa-facebook"></span></a></li>
 
 							<!-- LinkedIn -->
-							<li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://swifterswift.com&title=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS&oq=SwifterSwift is a collection of native Swift 3 extensions for iOS, macOS, tvOS and watchOS&summary=A collection of over 500 native Swift 3 extensions, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes –over 500 in 1– for iOS, macOS, tvOS and watchOS."
+							<li><a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://swifterswift.com&title=SwifterSwift is a collection of native Swift extensions for iOS, macOS, tvOS and watchOS&oq=SwifterSwift is a collection of native Swift extensions for iOS, macOS, tvOS and watchOS&summary=A collection of over 500 native Swift extensions, with handy methods, syntactic sugar, and performance improvements for wide range of primitive data types, UIKit and Cocoa classes –over 500 in 1– for iOS, macOS, tvOS and watchOS."
 								  onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" title="Share on LinkedIn"><span class="fa fa-linkedin"></span></a></li>
 
 						</ul>
