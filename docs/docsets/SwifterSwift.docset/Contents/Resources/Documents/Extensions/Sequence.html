@@ -23,7 +23,7 @@
         <a class="header-link" href="../index.html">
           SwifterSwift Docs
         </a>
-         (98% documented)
+         (100% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -147,6 +147,9 @@
                 <a class="nav-group-task-link" href="../Extensions/MKPolyline.html">MKPolyline</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/MutableCollection.html">MutableCollection</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/NSAttributedString.html">NSAttributedString</a>
               </li>
               <li class="nav-group-task">
@@ -156,7 +159,40 @@
                 <a class="nav-group-task-link" href="../Extensions/Optional.html">Optional</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/RandomAccessCollection.html">RandomAccessCollection</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/RangeReplaceableCollection.html">RangeReplaceableCollection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/SCNBox.html">SCNBox</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/SCNCapsule.html">SCNCapsule</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/SCNCone.html">SCNCone</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/SCNCylinder.html">SCNCylinder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/SCNGeometry.html">SCNGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/SCNMaterial.html">SCNMaterial</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/SCNPlane.html">SCNPlane</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/SCNShape.html">SCNShape</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/SCNSphere.html">SCNSphere</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/SCNVector3.html">SCNVector3</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/SKNode.html">SKNode</a>
@@ -193,6 +229,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UIBarButtonItem.html">UIBarButtonItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/UIBezierPath.html">UIBezierPath</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Extensions/UIButton.html">UIButton</a>
@@ -329,6 +368,12 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:12SwifterSwift5Colora">Color</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/SceneKitFloat">SceneKitFloat</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:12SwifterSwift13SceneKitFloata">SceneKitFloat</a>
               </li>
             </ul>
           </li>
@@ -959,6 +1004,231 @@
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ST12SwifterSwiftE17withoutDuplicates9transformSay7ElementQzGqd__AEKXE_tKSHRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/withoutDuplicates(transform:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ST12SwifterSwiftE17withoutDuplicates9transformSay7ElementQzGqd__AEKXE_tKSHRd__lF">withoutDuplicates(transform:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwifterSwift: Remove duplicate elements based on condition.</p>
+<pre class="highlight swift"><code>   <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">withoutDuplicates</span> <span class="p">{</span> <span class="nv">$0</span> <span class="p">}</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+   <span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)]</span><span class="o">.</span><span class="n">withoutDuplicates</span> <span class="p">{</span> <span class="nv">$0</span><span class="o">.</span><span class="mi">0</span> <span class="p">}</span> <span class="o">-&gt;</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">)]</span>
+</code></pre>
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    O(<em>n</em>), where <em>n</em> is the length of the sequence.
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">withoutDuplicates</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">transform</span><span class="p">:</span> <span class="p">(</span><span class="kt">Element</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">T</span><span class="p">)</span> <span class="k">rethrows</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>transform</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A closure that should return the value to be evaluated for repeating elements.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Sequence without repeating elements</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ST12SwifterSwiftE7divided2bySay7ElementQzG8matching_AF11nonMatchingtSbAEKXE_tKF"></a>
+                    <a name="//apple_ref/swift/Method/divided(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ST12SwifterSwiftE7divided2bySay7ElementQzG8matching_AF11nonMatchingtSbAEKXE_tKF">divided(by:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwifterSwift: Separates all items into 2 lists based on a given predicate.
+The first list contains all items for which the specified condition evaluates to true.
+The second list contains those that don&rsquo;t.</p>
+<pre class="highlight swift"><code><span class="nf">let</span> <span class="p">(</span><span class="n">even</span><span class="p">,</span> <span class="n">odd</span><span class="p">)</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span><span class="o">.</span><span class="n">divided</span> <span class="p">{</span> <span class="nv">$0</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">}</span>
+<span class="nf">let</span> <span class="p">(</span><span class="n">minors</span><span class="p">,</span> <span class="n">adults</span><span class="p">)</span> <span class="o">=</span> <span class="n">people</span><span class="o">.</span><span class="n">divided</span> <span class="p">{</span> <span class="nv">$0</span><span class="o">.</span><span class="n">age</span> <span class="o">&lt;</span> <span class="mi">18</span> <span class="p">}</span>
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">divided</span><span class="p">(</span><span class="n">by</span> <span class="nv">condition</span><span class="p">:</span> <span class="p">(</span><span class="kt">Element</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">rethrows</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="nv">matching</span><span class="p">:</span> <span class="p">[</span><span class="kt">Element</span><span class="p">],</span> <span class="nv">nonMatching</span><span class="p">:</span> <span class="p">[</span><span class="kt">Element</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>condition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>condition to evaluate each element against.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>A tuple of matched and non-matched items</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ST12SwifterSwiftE6sorted2by4withSay7ElementQzGs7KeyPathCyAFqd__G_Sbqd___qd__tXEtlF"></a>
+                    <a name="//apple_ref/swift/Method/sorted(by:with:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ST12SwifterSwiftE6sorted2by4withSay7ElementQzGs7KeyPathCyAFqd__G_Sbqd___qd__tXEtlF">sorted(by:with:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwifterSwift: Return a sorted array  based on a keypath and a compare function.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">sorted</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">by</span> <span class="nv">keyPath</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">T</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">with</span> <span class="nv">compare</span><span class="p">:</span> <span class="p">(</span><span class="kt">T</span><span class="p">,</span> <span class="kt">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Key path to sort. The key path type must be Comparable.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>compare</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Comparation function that will determine the ordering.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The sorted array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ST12SwifterSwiftE6sorted2bySay7ElementQzGs7KeyPathCyAEqd__G_tSLRd__lF"></a>
+                    <a name="//apple_ref/swift/Method/sorted(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ST12SwifterSwiftE6sorted2bySay7ElementQzGs7KeyPathCyAEqd__G_tSLRd__lF">sorted(by:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>SwifterSwift: Return a sorted array  based on a keypath and a compare function.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="n">sorted</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="n">by</span> <span class="nv">keyPath</span><span class="p">:</span> <span class="kt">KeyPath</span><span class="o">&lt;</span><span class="kt">Element</span><span class="p">,</span> <span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Element</span><span class="p">]</span> <span class="k">where</span> <span class="kt">T</span> <span class="p">:</span> <span class="kt">Comparable</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Key path to sort. The key path type must be Comparable.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The sorted array.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="task-group">
@@ -1131,7 +1401,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="external">Omar Albeik</a>. All rights reserved. (Last updated: 2019-03-31)</p>
+      <p>&copy; 2019 <a class="link" href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="external">Omar Albeik</a>. All rights reserved. (Last updated: 2019-09-23)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

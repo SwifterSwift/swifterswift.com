@@ -23,7 +23,7 @@
         <a class="header-link" href="index.html">
           SwifterSwift Docs
         </a>
-         (98% documented)
+         (100% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -147,6 +147,9 @@
                 <a class="nav-group-task-link" href="Extensions/MKPolyline.html">MKPolyline</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/MutableCollection.html">MutableCollection</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/NSAttributedString.html">NSAttributedString</a>
               </li>
               <li class="nav-group-task">
@@ -156,7 +159,40 @@
                 <a class="nav-group-task-link" href="Extensions/Optional.html">Optional</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/RandomAccessCollection.html">RandomAccessCollection</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/RangeReplaceableCollection.html">RangeReplaceableCollection</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/SCNBox.html">SCNBox</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/SCNCapsule.html">SCNCapsule</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/SCNCone.html">SCNCone</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/SCNCylinder.html">SCNCylinder</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/SCNGeometry.html">SCNGeometry</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/SCNMaterial.html">SCNMaterial</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/SCNPlane.html">SCNPlane</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/SCNShape.html">SCNShape</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/SCNSphere.html">SCNSphere</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/SCNVector3.html">SCNVector3</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/SKNode.html">SKNode</a>
@@ -193,6 +229,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/UIBarButtonItem.html">UIBarButtonItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Extensions/UIBezierPath.html">UIBezierPath</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Extensions/UIButton.html">UIButton</a>
@@ -330,6 +369,12 @@
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Typealiases.html#/s:12SwifterSwift5Colora">Color</a>
               </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/SceneKitFloat">SceneKitFloat</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Typealiases.html#/s:12SwifterSwift13SceneKitFloata">SceneKitFloat</a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -413,7 +458,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">CGFloat</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">struct</span> <span class="kt">CGFloat</span></code></pre>
 
                         </div>
                       </div>
@@ -641,7 +687,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Calendar</span> <span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">ReferenceConvertible</span><span class="p">,</span> <span class="n">_MutableBoxing</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Calendar</span> <span class="p">:</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">ReferenceConvertible</span></code></pre>
 
                         </div>
                       </div>
@@ -679,7 +725,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Data</span> <span class="p">:</span> <span class="kt">ReferenceConvertible</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">RandomAccessCollection</span><span class="p">,</span> <span class="kt">MutableCollection</span><span class="p">,</span> <span class="kt">RangeReplaceableCollection</span><span class="p">,</span> <span class="kt">MutableDataProtocol</span><span class="p">,</span> <span class="kt">ContiguousBytes</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">struct</span> <span class="kt">Data</span> <span class="p">:</span> <span class="kt">ReferenceConvertible</span><span class="p">,</span> <span class="kt">Equatable</span><span class="p">,</span> <span class="kt">Hashable</span><span class="p">,</span> <span class="kt">RandomAccessCollection</span><span class="p">,</span> <span class="kt">MutableCollection</span><span class="p">,</span> <span class="kt">RangeReplaceableCollection</span><span class="p">,</span> <span class="kt">MutableDataProtocol</span><span class="p">,</span> <span class="kt">ContiguousBytes</span></code></pre>
 
                         </div>
                       </div>
@@ -1056,9 +1103,389 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
+                <a name="/Methods6"></a>
+                <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
+                <a href="#/Methods6">
+                  <h3 class="section-name">Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SCNBox"></a>
+                    <a name="//apple_ref/swift/Extension/SCNBox" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SCNBox">SCNBox</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Extensions/SCNBox.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SCNBox</span> <span class="p">:</span> <span class="kt">SCNGeometry</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Methods7"></a>
+                <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
+                <a href="#/Methods7">
+                  <h3 class="section-name">Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SCNCapsule"></a>
+                    <a name="//apple_ref/swift/Extension/SCNCapsule" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SCNCapsule">SCNCapsule</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Extensions/SCNCapsule.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SCNCapsule</span> <span class="p">:</span> <span class="kt">SCNGeometry</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Methods8"></a>
+                <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
+                <a href="#/Methods8">
+                  <h3 class="section-name">Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SCNCone"></a>
+                    <a name="//apple_ref/swift/Extension/SCNCone" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SCNCone">SCNCone</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Extensions/SCNCone.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SCNCone</span> <span class="p">:</span> <span class="kt">SCNGeometry</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Methods9"></a>
+                <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
+                <a href="#/Methods9">
+                  <h3 class="section-name">Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SCNCylinder"></a>
+                    <a name="//apple_ref/swift/Extension/SCNCylinder" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SCNCylinder">SCNCylinder</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Extensions/SCNCylinder.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SCNCylinder</span> <span class="p">:</span> <span class="kt">SCNGeometry</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
                 <a name="/Properties10"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
                 <a href="#/Properties10">
+                  <h3 class="section-name">Properties</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SCNGeometry"></a>
+                    <a name="//apple_ref/swift/Extension/SCNGeometry" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SCNGeometry">SCNGeometry</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Extensions/SCNGeometry.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SCNGeometry</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">SCNAnimatable</span><span class="p">,</span> <span class="kt">SCNBoundingVolume</span><span class="p">,</span> <span class="kt">SCNShadable</span><span class="p">,</span> <span class="kt">NSCopying</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Methods10"></a>
+                <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
+                <a href="#/Methods10">
+                  <h3 class="section-name">Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SCNMaterial"></a>
+                    <a name="//apple_ref/swift/Extension/SCNMaterial" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SCNMaterial">SCNMaterial</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Extensions/SCNMaterial.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SCNMaterial</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">SCNAnimatable</span><span class="p">,</span> <span class="kt">SCNShadable</span><span class="p">,</span> <span class="kt">NSCopying</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Methods11"></a>
+                <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
+                <a href="#/Methods11">
+                  <h3 class="section-name">Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SCNPlane"></a>
+                    <a name="//apple_ref/swift/Extension/SCNPlane" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SCNPlane">SCNPlane</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Extensions/SCNPlane.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SCNPlane</span> <span class="p">:</span> <span class="kt">SCNGeometry</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Methods12"></a>
+                <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
+                <a href="#/Methods12">
+                  <h3 class="section-name">Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SCNShape"></a>
+                    <a name="//apple_ref/swift/Extension/SCNShape" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SCNShape">SCNShape</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Extensions/SCNShape.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SCNShape</span> <span class="p">:</span> <span class="kt">SCNGeometry</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Methods13"></a>
+                <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
+                <a href="#/Methods13">
+                  <h3 class="section-name">Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)SCNSphere"></a>
+                    <a name="//apple_ref/swift/Extension/SCNSphere" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)SCNSphere">SCNSphere</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Extensions/SCNSphere.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">SCNSphere</span> <span class="p">:</span> <span class="kt">SCNGeometry</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Methods14"></a>
+                <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
+                <a href="#/Methods14">
+                  <h3 class="section-name">Methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@S@SCNVector3"></a>
+                    <a name="//apple_ref/swift/Extension/SCNVector3" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@S@SCNVector3">SCNVector3</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Extensions/SCNVector3.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">SCNVector3</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties11"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <a href="#/Properties11">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -1094,9 +1521,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods6"></a>
+                <a name="/Methods15"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods6">
+                <a href="#/Methods15">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -1132,9 +1559,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods7"></a>
+                <a name="/Methods16"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods7">
+                <a href="#/Methods16">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -1159,7 +1586,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Array</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">&gt;</span> <span class="p">:</span> <span class="n">_DestructorSafeContainer</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">struct</span> <span class="kt">Array</span><span class="o">&lt;</span><span class="kt">Element</span><span class="o">&gt;</span> <span class="p">:</span> <span class="n">_DestructorSafeContainer</span></code></pre>
 
                         </div>
                       </div>
@@ -1170,9 +1598,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods8"></a>
+                <a name="/Methods17"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods8">
+                <a href="#/Methods17">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -1208,9 +1636,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods9"></a>
+                <a name="/Methods18"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods9">
+                <a href="#/Methods18">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -1246,9 +1674,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties11"></a>
+                <a name="/Properties12"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties11">
+                <a href="#/Properties12">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -1273,7 +1701,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">struct</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
                       </div>
@@ -1284,9 +1713,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties12"></a>
+                <a name="/Properties13"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties12">
+                <a href="#/Properties13">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -1311,7 +1740,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Character</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">struct</span> <span class="kt">Character</span></code></pre>
 
                         </div>
                       </div>
@@ -1322,9 +1752,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods10"></a>
+                <a name="/Methods19"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods10">
+                <a href="#/Methods19">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -1360,9 +1790,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods11"></a>
+                <a name="/Methods20"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods11">
+                <a href="#/Methods20">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -1398,9 +1828,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods12"></a>
+                <a name="/Methods21"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods12">
+                <a href="#/Methods21">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -1425,7 +1855,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Key</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">struct</span> <span class="kt">Dictionary</span><span class="o">&lt;</span><span class="kt">Key</span><span class="p">,</span> <span class="kt">Value</span><span class="o">&gt;</span> <span class="k">where</span> <span class="kt">Key</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
 
                         </div>
                       </div>
@@ -1436,9 +1867,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties13"></a>
+                <a name="/Properties14"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties13">
+                <a href="#/Properties14">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -1463,7 +1894,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Double</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">struct</span> <span class="kt">Double</span></code></pre>
 
                         </div>
                       </div>
@@ -1474,9 +1906,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties14"></a>
+                <a name="/Properties15"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties14">
+                <a href="#/Properties15">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -1501,7 +1933,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Float</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">struct</span> <span class="kt">Float</span></code></pre>
 
                         </div>
                       </div>
@@ -1512,9 +1945,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties15"></a>
+                <a name="/Properties16"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties15">
+                <a href="#/Properties16">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -1550,9 +1983,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties16"></a>
+                <a name="/Properties17"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties16">
+                <a href="#/Properties17">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -1577,7 +2010,39 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">Int</span> <span class="p">:</span> <span class="kt">FixedWidthInteger</span><span class="p">,</span> <span class="kt">SignedInteger</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">struct</span> <span class="kt">Int</span> <span class="p">:</span> <span class="kt">FixedWidthInteger</span><span class="p">,</span> <span class="kt">SignedInteger</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:SM"></a>
+                    <a name="//apple_ref/swift/Extension/MutableCollection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:SM">MutableCollection</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Extensions/MutableCollection.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">MutableCollection</span> <span class="p">:</span> <span class="kt">Collection</span> <span class="k">where</span> <span class="k">Self</span><span class="o">.</span><span class="kt">SubSequence</span> <span class="p">:</span> <span class="kt">MutableCollection</span></code></pre>
 
                         </div>
                       </div>
@@ -1588,9 +2053,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods13"></a>
+                <a name="/Methods22"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods13">
+                <a href="#/Methods22">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -1615,8 +2080,39 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@_frozen</span>
+                          <pre class="highlight swift"><code><span class="kd">@frozen</span>
 <span class="kd">enum</span> <span class="kt">Optional</span><span class="o">&lt;</span><span class="kt">Wrapped</span><span class="o">&gt;</span> <span class="p">:</span> <span class="kt">ExpressibleByNilLiteral</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sk"></a>
+                    <a name="//apple_ref/swift/Extension/RandomAccessCollection" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sk">RandomAccessCollection</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Extensions/RandomAccessCollection.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">RandomAccessCollection</span> <span class="p">:</span> <span class="kt">BidirectionalCollection</span> <span class="k">where</span> <span class="k">Self</span><span class="o">.</span><span class="kt">Indices</span> <span class="p">:</span> <span class="kt">RandomAccessCollection</span><span class="p">,</span> <span class="k">Self</span><span class="o">.</span><span class="kt">SubSequence</span> <span class="p">:</span> <span class="kt">RandomAccessCollection</span></code></pre>
 
                         </div>
                       </div>
@@ -1696,9 +2192,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties17"></a>
+                <a name="/Properties18"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties17">
+                <a href="#/Properties18">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -1734,9 +2230,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties18"></a>
+                <a name="/Properties19"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties18">
+                <a href="#/Properties19">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -1772,9 +2268,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties19"></a>
+                <a name="/Properties20"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties19">
+                <a href="#/Properties20">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -1799,7 +2295,8 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">struct</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@frozen</span>
+<span class="kd">struct</span> <span class="kt">String</span></code></pre>
 
                         </div>
                       </div>
@@ -1871,9 +2368,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods14"></a>
+                <a name="/Methods23"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods14">
+                <a href="#/Methods23">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -1940,9 +2437,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods15"></a>
+                <a name="/Methods24"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods15">
+                <a href="#/Methods24">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -1978,9 +2475,47 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties20"></a>
+                <a name="/Initializers4"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers4">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)UIBezierPath"></a>
+                    <a name="//apple_ref/swift/Extension/UIBezierPath" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)UIBezierPath">UIBezierPath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                        <a href="Extensions/UIBezierPath.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">UIBezierPath</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">NSCopying</span><span class="p">,</span> <span class="kt">NSSecureCoding</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties21"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties20">
+                <a href="#/Properties21">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -2016,9 +2551,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties21"></a>
+                <a name="/Properties22"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties21">
+                <a href="#/Properties22">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -2054,9 +2589,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties22"></a>
+                <a name="/Properties23"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties22">
+                <a href="#/Properties23">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -2092,10 +2627,10 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods16"></a>
-                <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods16">
-                  <h3 class="section-name">Methods</h3>
+                <a name="/Properties24"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <a href="#/Properties24">
+                  <h3 class="section-name">Properties</h3>
                 </a>
               </div>
               <ul class="item-container">
@@ -2130,9 +2665,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties23"></a>
+                <a name="/Properties25"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties23">
+                <a href="#/Properties25">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -2168,9 +2703,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods17"></a>
+                <a name="/Methods25"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods17">
+                <a href="#/Methods25">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -2206,9 +2741,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties24"></a>
+                <a name="/Properties26"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties24">
+                <a href="#/Properties26">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -2244,9 +2779,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods18"></a>
+                <a name="/Methods26"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods18">
+                <a href="#/Methods26">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -2282,9 +2817,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods19"></a>
+                <a name="/Methods27"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods19">
+                <a href="#/Methods27">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -2351,9 +2886,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods20"></a>
+                <a name="/Methods28"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods20">
+                <a href="#/Methods28">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -2389,9 +2924,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods21"></a>
+                <a name="/Methods29"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods21">
+                <a href="#/Methods29">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -2427,9 +2962,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods22"></a>
+                <a name="/Methods30"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods22">
+                <a href="#/Methods30">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -2465,9 +3000,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods23"></a>
+                <a name="/Methods31"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods23">
+                <a href="#/Methods31">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -2503,9 +3038,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods24"></a>
+                <a name="/Methods32"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods24">
+                <a href="#/Methods32">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -2541,9 +3076,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties25"></a>
+                <a name="/Properties27"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties25">
+                <a href="#/Properties27">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -2579,9 +3114,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties26"></a>
+                <a name="/Properties28"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties26">
+                <a href="#/Properties28">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -2617,9 +3152,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods25"></a>
+                <a name="/Methods33"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods25">
+                <a href="#/Methods33">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -2655,9 +3190,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Initializers4"></a>
+                <a name="/Initializers5"></a>
                 <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
-                <a href="#/Initializers4">
+                <a href="#/Initializers5">
                   <h3 class="section-name">Initializers</h3>
                 </a>
               </div>
@@ -2693,9 +3228,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods26"></a>
+                <a name="/Methods34"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods26">
+                <a href="#/Methods34">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -2731,9 +3266,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods27"></a>
+                <a name="/Methods35"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods27">
+                <a href="#/Methods35">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -2769,9 +3304,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods28"></a>
+                <a name="/Methods36"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods28">
+                <a href="#/Methods36">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -2807,9 +3342,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties27"></a>
+                <a name="/Properties29"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties27">
+                <a href="#/Properties29">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -2883,9 +3418,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods29"></a>
+                <a name="/Methods37"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods29">
+                <a href="#/Methods37">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -2921,9 +3456,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Properties28"></a>
+                <a name="/Properties30"></a>
                 <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
-                <a href="#/Properties28">
+                <a href="#/Properties30">
                   <h3 class="section-name">Properties</h3>
                 </a>
               </div>
@@ -2997,9 +3532,9 @@
             </div>
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Methods30"></a>
+                <a name="/Methods38"></a>
                 <a name="//apple_ref/swift/Section/Methods" class="dashAnchor"></a>
-                <a href="#/Methods30">
+                <a href="#/Methods38">
                   <h3 class="section-name">Methods</h3>
                 </a>
               </div>
@@ -3039,7 +3574,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2019 <a class="link" href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="external">Omar Albeik</a>. All rights reserved. (Last updated: 2019-03-31)</p>
+      <p>&copy; 2019 <a class="link" href="https://github.com/SwifterSwift/SwifterSwift" target="_blank" rel="external">Omar Albeik</a>. All rights reserved. (Last updated: 2019-09-23)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.4</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
