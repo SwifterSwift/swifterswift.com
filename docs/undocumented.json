@@ -1,6 +1,12 @@
 {
   "warnings": [
-
+    {
+      "file": "/Users/omar/Desktop/Opensource/SwifterSwift/Sources/SwifterSwift/Foundation/NSRegularExpressionExtensions.swift",
+      "line": 44,
+      "symbol": "NSRegularExpression.enumerateMatches(in:options:range:using:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
   ],
   "source_directory": "/Users/omar/Desktop/Opensource/SwifterSwift"
 }
